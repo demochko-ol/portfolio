@@ -1,0 +1,336 @@
+/*!
+ * =============================================================================
+ * = Responsive Grid
+ * =============================================================================
+ */
+.r-grid {
+  width: 100%;
+}
+.r-grid:before,
+.r-grid:after {
+  content: " ";
+  display: table;
+}
+.r-grid:after {
+  clear: both;
+}
+.r-grid [class="col"] {
+  float: left;
+  min-height: 1px;
+}
+.r-grid[data-grid-w="6"] .col {
+  width: 16.66666667%;
+}
+.r-grid[data-grid-w="6"] .col:nth-child(6n + 7) {
+  clear: both;
+}
+.r-grid[data-grid-w="5"] .col {
+  width: 20%;
+}
+.r-grid[data-grid-w="5"] .col:nth-child(5n + 6) {
+  clear: both;
+}
+.r-grid[data-grid-w="4"] .col {
+  width: 25%;
+}
+.r-grid[data-grid-w="4"] .col:nth-child(4n + 5) {
+  clear: both;
+}
+.r-grid[data-grid-w="3"] .col {
+  width: 33.33333333%;
+}
+.r-grid[data-grid-w="3"] .col:nth-child(3n + 4) {
+  clear: both;
+}
+.r-grid[data-grid-w="2"] .col {
+  width: 50%;
+}
+.r-grid[data-grid-w="2"] .col:nth-child(2n + 3) {
+  clear: both;
+}
+.r-grid[data-grid-w="1"] .col {
+  float: none;
+  min-height: 0;
+  width: 100%;
+}
+/*!
+ * ============================================================================
+ * = Responsive Grid: XLG
+ * ============================================================================
+ */
+@media screen and (max-width: 1920px) {
+  .r-grid[data-grid-xlg="6"] .col:nth-child(n),
+  .r-grid[data-grid-xlg="5"] .col:nth-child(n),
+  .r-grid[data-grid-xlg="4"] .col:nth-child(n),
+  .r-grid[data-grid-xlg="3"] .col:nth-child(n),
+  .r-grid[data-grid-xlg="2"] .col:nth-child(n),
+  .r-grid[data-grid-xlg="1"] .col:nth-child(n) {
+    clear: none;
+  }
+  .r-grid[data-grid-xlg="6"] .col {
+    width: 16.66666667%;
+  }
+  .r-grid[data-grid-xlg="6"] .col:nth-child(6n + 7) {
+    clear: both;
+  }
+  .r-grid[data-grid-xlg="5"] .col {
+    width: 20%;
+  }
+  .r-grid[data-grid-xlg="5"] .col:nth-child(5n + 6) {
+    clear: both;
+  }
+  .r-grid[data-grid-xlg="4"] .col {
+    width: 25%;
+  }
+  .r-grid[data-grid-xlg="4"] .col:nth-child(4n + 5) {
+    clear: both;
+  }
+  .r-grid[data-grid-xlg="3"] .col {
+    width: 33.33333333%;
+  }
+  .r-grid[data-grid-xlg="3"] .col:nth-child(3n + 4) {
+    clear: both;
+  }
+  .r-grid[data-grid-xlg="2"] .col {
+    width: 50%;
+  }
+  .r-grid[data-grid-xlg="2"] .col:nth-child(2n + 3) {
+    clear: both;
+  }
+  .r-grid[data-grid-xlg="1"] .col {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+}
+/*!
+ * ============================================================================
+ * = Responsive Grid: LG
+ * ============================================================================
+ */
+@media screen and (max-width: 1279px) {
+  .r-grid[data-grid-lg="6"] .col:nth-child(n),
+  .r-grid[data-grid-lg="5"] .col:nth-child(n),
+  .r-grid[data-grid-lg="4"] .col:nth-child(n),
+  .r-grid[data-grid-lg="3"] .col:nth-child(n),
+  .r-grid[data-grid-lg="2"] .col:nth-child(n),
+  .r-grid[data-grid-lg="1"] .col:nth-child(n) {
+    clear: none;
+  }
+  .r-grid[data-grid-lg="6"] .col {
+    width: 16.66666667%;
+  }
+  .r-grid[data-grid-lg="6"] .col:nth-child(6n + 7) {
+    clear: both;
+  }
+  .r-grid[data-grid-lg="5"] .col {
+    width: 20%;
+  }
+  .r-grid[data-grid-lg="5"] .col:nth-child(5n + 6) {
+    clear: both;
+  }
+  .r-grid[data-grid-lg="4"] .col {
+    width: 25%;
+  }
+  .r-grid[data-grid-lg="4"] .col:nth-child(4n + 5) {
+    clear: both;
+  }
+  .r-grid[data-grid-lg="3"] .col {
+    width: 33.33333333%;
+  }
+  .r-grid[data-grid-lg="3"] .col:nth-child(3n + 4) {
+    clear: both;
+  }
+  .r-grid[data-grid-lg="2"] .col {
+    width: 50%;
+  }
+  .r-grid[data-grid-lg="2"] .col:nth-child(2n + 3) {
+    clear: both;
+  }
+  .r-grid[data-grid-lg="1"] .col {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+}
+/*!
+ * ============================================================================
+ * = Responsive Grid: XXMD
+ * ============================================================================
+ */
+@media screen and (max-width: 1023px) {
+  .r-grid[data-grid-xxmd="5"] .col:nth-child(n),
+  .r-grid[data-grid-xxmd="4"] .col:nth-child(n),
+  .r-grid[data-grid-xxmd="3"] .col:nth-child(n),
+  .r-grid[data-grid-xxmd="2"] .col:nth-child(n),
+  .r-grid[data-grid-xxmd="1"] .col:nth-child(n) {
+    clear: none;
+  }
+  .r-grid[data-grid-xxmd="5"] .col {
+    width: 20%;
+  }
+  .r-grid[data-grid-xxmd="5"] .col:nth-child(5n + 6) {
+    clear: both;
+  }
+  .r-grid[data-grid-xxmd="4"] .col {
+    width: 25%;
+  }
+  .r-grid[data-grid-xxmd="4"] .col:nth-child(4n + 5) {
+    clear: both;
+  }
+  .r-grid[data-grid-xxmd="3"] .col {
+    width: 33.33333333%;
+  }
+  .r-grid[data-grid-xxmd="3"] .col:nth-child(3n + 4) {
+    clear: both;
+  }
+  .r-grid[data-grid-xxmd="2"] .col {
+    width: 50%;
+  }
+  .r-grid[data-grid-xxmd="2"] .col:nth-child(2n + 3) {
+    clear: both;
+  }
+  .r-grid[data-grid-xxmd="1"] .col {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+}
+/*!
+ * ============================================================================
+ * = Responsive Grid: XMD
+ * ============================================================================
+ */
+@media screen and (max-width: 979px) {
+  .r-grid[data-grid-xmd="4"] .col:nth-child(n),
+  .r-grid[data-grid-xmd="3"] .col:nth-child(n),
+  .r-grid[data-grid-xmd="2"] .col:nth-child(n),
+  .r-grid[data-grid-xmd="1"] .col:nth-child(n) {
+    clear: none;
+  }
+  .r-grid[data-grid-xmd="4"] .col {
+    width: 25%;
+  }
+  .r-grid[data-grid-xmd="4"] .col:nth-child(4n + 5) {
+    clear: both;
+  }
+  .r-grid[data-grid-xmd="3"] .col {
+    width: 33.33333333%;
+  }
+  .r-grid[data-grid-xmd="3"] .col:nth-child(3n + 4) {
+    clear: both;
+  }
+  .r-grid[data-grid-xmd="2"] .col {
+    width: 50%;
+  }
+  .r-grid[data-grid-xmd="2"] .col:nth-child(2n + 3) {
+    clear: both;
+  }
+  .r-grid[data-grid-xmd="1"] .col {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+}
+/*!
+ * ============================================================================
+ * = Responsive Grid: XMD
+ * ============================================================================
+ */
+@media screen and (max-width: 767px) {
+  .r-grid[data-grid-md="3"] .col:nth-child(n),
+  .r-grid[data-grid-md="2"] .col:nth-child(n),
+  .r-grid[data-grid-md="1"] .col:nth-child(n) {
+    clear: none;
+  }
+  .r-grid[data-grid-md="3"] .col {
+    width: 33.33333333%;
+  }
+  .r-grid[data-grid-md="3"] .col:nth-child(3n + 4) {
+    clear: both;
+  }
+  .r-grid[data-grid-md="2"] .col {
+    width: 50%;
+  }
+  .r-grid[data-grid-md="2"] .col:nth-child(2n + 3) {
+    clear: both;
+  }
+  .r-grid[data-grid-md="1"] .col {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+}
+/*!
+ * ============================================================================
+ * = Responsive Grid: XXSM
+ * ============================================================================
+ */
+@media screen and (max-width: 639px) {
+  .r-grid[data-grid-xxsm="3"] .col:nth-child(n),
+  .r-grid[data-grid-xxsm="2"] .col:nth-child(n),
+  .r-grid[data-grid-xxsm="1"] .col:nth-child(n) {
+    clear: none;
+  }
+  .r-grid[data-grid-xxsm="3"] .col {
+    width: 33.33333333%;
+  }
+  .r-grid[data-grid-xxsm="3"] .col:nth-child(3n + 4) {
+    clear: both;
+  }
+  .r-grid[data-grid-xxsm="2"] .col {
+    width: 50%;
+  }
+  .r-grid[data-grid-xxsm="2"] .col:nth-child(2n + 3) {
+    clear: both;
+  }
+  .r-grid[data-grid-xxsm="1"] .col {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+}
+/*!
+ * ============================================================================
+ * = Responsive Grid: XSM
+ * ============================================================================
+ */
+@media screen and (max-width: 479px) {
+  .r-grid[data-grid-xsm="2"] .col:nth-child(n),
+  .r-grid[data-grid-xsm="1"] .col:nth-child(n) {
+    clear: none;
+  }
+  .r-grid[data-grid-xsm="2"] .col {
+    width: 50%;
+  }
+  .r-grid[data-grid-xsm="2"] .col:nth-child(2n + 3) {
+    clear: both;
+  }
+  .r-grid[data-grid-xsm="1"] .col {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+}
+/*!
+ * ============================================================================
+ * = Responsive Grid: SM
+ * ============================================================================
+ */
+@media screen and (max-width: 359px) {
+  .r-grid[data-grid-sm="2"] .col:nth-child(n),
+  .r-grid[data-grid-sm="1"] .col:nth-child(n) {
+    clear: none;
+  }
+  .r-grid[data-grid-sm="2"] .col {
+    width: 50%;
+  }
+  .r-grid[data-grid-sm="2"] .col:nth-child(2n + 3) {
+    clear: both;
+  }
+  .r-grid[data-grid-sm="1"] .col {
+    float: none;
+    min-height: 0;
+    width: 100%;
+  }
+}

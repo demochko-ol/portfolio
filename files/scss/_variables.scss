@@ -1,0 +1,30 @@
+/* 
+---------Variables--------- */
+
+$files:					"../images/";
+$grid-padding:			20px;
+$f-height:				100px;
+
+/* 
+---------Colors--------- */
+$light-grey:			#f4f4f4;
+$light-blue:			#41B7C4;
+$main-color:			#00305b;
+$theme-color:			#6AA549;
+$color:					#6AA549;
+
+
+/* 
+---------Mixins--------- */
+@mixin list-inline(){
+	list-style: none;
+	li{
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+@mixin bd-radius($radius){
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stash</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="header_content">
+			<a href="#" class="fork"></a>
+			<div class="logo">
+				<a href="#"><img src="images/stash-logo.png" alt="" /></a>
+			</div>
+			<h1>Save and view text snippets in the console while they're all synced in the cloud.</h1>
+			<div class="clearfix">
+				<ul>
+					<li class="write"><i></i>A simple tool to write down the important stuff without leaving the favourite console.</li>
+					<li class="code"><i></i>Noteworthy URLs, commands or code snippets or just a fresh idea for an article — anything goes.</li>
+					<li class="data"><i></i>All the data are available both in terminal and in the web interface.</li>
+					<li class="stash"><i></i>Stash is built for developers, by developers. Feel free to fork and add the features that we’ve missed. </li>
+				</ul>
+			</div>
+		</div>
+		<div class="login">		
+			<div class="btn-wrapper">
+				<div class="anim btn btn-primary first">
+                    <h5 class="title">Sign in</h5>
+					<button class="close" type="button"></button>
+					<form class="form">
+                        <div class="step1 visible">
+                            <p>No spam, promise.</p>
+                            <div>
+                                <input type="text" class="input form-control" id="email">
+                            </div>
+                            <span class="btn-light" id="create" rel="step2">Create account</span>
+                        </div>
+                        <div class="step2" id="step2">
+                            <p>Thank you! Please check your mail (eugene@gmail.com) for the activation link.</p>
+                            <input type="submit" class="btn-light" value="Continue"/>
+                        </div>
+					</form>
+				</div>	
+				<span>or</span>
+				<div class="anim btn btn-primary second">
+                    <h5 class="title">Log&nbsp;in</h5>
+					<button class="close" type="button"></button>
+					<form class="form">
+                        <p>In case you forgot the password, you can <a href="#">reset it here</a>.</p>
+						<div>
+							<input type="text" class="input form-control" id="input_login" placeholder="email">
+						</div>
+						<div>
+							<input type="password" class="input form-control" placeholder="password" id="input_password">
+						</div>
+						<input type="submit" class="btn-light" value="Continue"/>
+					</form>
+				</div>				
+			</div>
+	  </div>
+	</header><!-- .header-->
+
+	<main class="content">
+		<div class="video_container container_bg">
+			<div class="container"><h2>See Stash in action</h2></div>
+			<div class="video">
+				<iframe src="https://player.vimeo.com/video/80249972" width="640" height="384" allowfullscreen></iframe>
+				<!-- <p><a href="https://vimeo.com/80249972">stash-app-test</a> from <a href="https://vimeo.com/eugenekudashev">Eugene Kudashev</a> on <a href="https://vimeo.com">Vimeo</a>.</p>	 --> 
+			</div>
+			<div class="text-center">
+				<p>We encourage you to try Stash and give us some feedback, as we're currently in beta</p>
+			</div>
+			<article class="container">
+				<h2>How to install</h2>				
+				<p>Stash is written in Python, so the best way to go is to open up the terminal and type</p>
+				<pre><code>pip install stash</code></pre>
+					
+				<p>That, of course, requires having pip installed.</p>
+				<p>We’ll write more stuff here lately as soon as the installer will be ready. There’ll be a separate set of instructions for each platform.</p>
+				<p>Type <code>stash -h</code> to check that stash is installed successfully. If this command produces sensible usage instructions, then we're all good.</p>
+			</article>
+			<div class="text-center help">
+				If something goes wrong, please contact us—we'll be happy to help. Drop us a line at <a href="#">support@stashapp.com</a> or ping our Twitter: <a href="#">@stashapp</a>.
+			</div>
+		</div>
+	<article class="container use_bg">
+		<h2>How to use</h2>
+		<p>After installing, set up an account either on the web or in the app.</p>
+		<h4>Log in</h4>
+		<p>Type <code>stash login</code> to begin.</p>
+		<pre><code>$ stash <span class="orange">login</span>
+Please enter your email:
+$ nyddle@gmail.com
+Please enter the password:
+$ *************
+Logged in.</code></pre>
+		
+		<h4>Create key</h4>
+		<p>Stash keeps data as key-value pairs. Come up with a nice key name and put the meaningful stuff inside it.</p>
+		<pre><code>$ stash 37signals_blog http://37signals.com/svn
+Saved
+$ stash 2read ‘About Face 3: The Essentials of Interaction Design’
+Saved</code></pre>
+		<p>General syntax is <code>stash key_name value</code>. </p>
+		
+		<h4>View</h4>
+		<p>General syntax is <code>stash get key_name</code> or just <code>stash key_name</code>. </p>
+		<pre><code>$ stash <span class="orange">get</span> 37signals
+http://37signals.com
+$ stash 37signals
+http://37signals.com</code></pre>
+
+		<h4>Edit</h4>
+		<p>General syntax is <code>stash set key_name new_value</code>.</p>
+		<pre><code>$ stash <span class="orange"> set</span> 37signals http://38signals.com
+Saved</code></pre>
+		
+		<h4>Delete</h4>
+		<p>General syntax is <code>stash (remove|delete|rm) key_name</code>.</p>
+		<pre><code>$ stash <span class="orange">delete</span> 37signals
+Deleted</code></pre>
+		
+		<h4>List keys</h4>
+		<p>General syntax is<code>stash show keys</code>or just<code>stash keys</code>.</p>
+		<pre><code>$ stash <span class="orange">keys</span>
+nice_blogs
+reading
+37signals</code></pre>
+		
+		<h4>Show all data</h4>
+		<p>There are several commands to do this:<code>stash (show|view|list|all)</code>.</p>
+		<pre><code>$ stash all
+nice_blogs: “Joel on Software, 37signals SVN”
+reading: “About Face 3: The Essentials of Interaction Design”
+37signals: “http://37signals.com”</code></pre>
+	</article>
+	<div class="text-center request">	
+		If you have a feature request, don't hesitate to drop us a line at <a href="#">hello@stashapp.com</a>.
+	</div>
+		
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<div class="clearfix">
+		<div class="contact">
+			<span>Contact us:</span>
+			<ul>
+				<li><a href="#" class="mail"></a></li>
+				<li><a href="#" class="tweet"></a></li>
+			</ul>
+		</div>
+	</div>
+</footer><!-- .footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

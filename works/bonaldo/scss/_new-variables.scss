@@ -1,0 +1,79 @@
+
+
+ /*!
+ * BOOTSTRAP VARIABLES & MIXINS
+ */
+
+$grid-gutter-width:         40px !default;
+
+/* $navbar-padding-horizontal:  ; */
+
+
+$container-ml-desktop:      (984px + $grid-gutter-width) !default;
+//For `$screen-ml-min` and up.
+$container-ml:                 $container-ml-desktop !default;
+
+
+
+$screen-ml:                  1032px !default;
+$screen-ml-min:              $screen-ml !default;
+$screen-ml-max:              ($screen-lg-min - 1) !default;
+$screen-ml-desktop:          $screen-ml-min !default;
+
+
+
+ /*!
+ * NEW VARIABLES & MIXINS
+ */
+
+ $files:					"../images/";
+
+$orange:					#e07e27;
+$grey: 						#808080;
+
+
+$foot-height:				100px;
+$foot-height-sm:			236px;
+$foot-height-xs:			300px;
+
+/* -------- MIXINS -------- */
+
+@mixin bg_size($size...){
+	-webkit-background-size: $size;
+    -moz-background-size: $size;
+    background-size: $size;
+}
+
+@mixin bd-radius($radius...) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin list-table($li-width: auto){
+  @include list-unstyled;
+  display: table;
+  > li {
+    display: table-cell;
+    width: $li-width;
+  }
+}
+@mixin img-container($width, $height){
+	display: block;
+	width: $width;
+	height: $height;
+	float: left;
+	text-align: center;
+	margin-right: 25px;
+	.inner{
+		display: table-cell;
+		width: $width;
+		height: $height;
+		vertical-align: middle;
+		img{
+			max-width: $width;
+			max-height: $height;
+
+		}
+	}
+}

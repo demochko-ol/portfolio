@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dialbase - Experian Reporting</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,300,300italic,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="settings">
+<div class="wrapper">
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="logo"><a href="index.html">Dialbase</a></div>
+            <div class="nav-right">
+                <a class="link-person" href="#"><img src="images/temporary/person-img-ini.png" alt="Ini Edwards"></a>
+            </div>
+        </header>
+        <div class="container-wrapper">
+            <div class="container">
+                <form action="#">
+                    <h1>Experian Reporting</h1>
+                    <!-- Outcomes -->
+                    <section class="section ex-reporting">
+                        <div class="wrap-title">                            
+                            <div class="wrap-item">
+                                <label for="sel-1">Input type</label>
+                                <select id="sel-1" class="selectpicker">
+                                    <option value="" selected>All</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="wrap-item wrap-datepicker">
+                                <label for="from">From</label>
+                                <input id="from" type="text" placeholder="01/02/2015">
+                                <a href="#" class="e-btn m-secondary btn-datepicker"><img src="images/datepicker.svg" alt="datepicker"></a>
+                            </div>
+                            <div class="wrap-item wrap-datepicker">
+                                <label for="to">To</label>
+                                <input id="to" type="text" placeholder="01/02/2015">
+                                <a href="#" class="e-btn m-secondary btn-datepicker"><img src="images/datepicker.svg" alt="datepicker"></a>
+                            </div>  
+                        </div>
+                        <div class="calls-conversion-wrap">
+                            <h3>Calls & conversion</h3>
+                            <div class="row">
+                                <div class="left-col">
+                                    <div class="calls-wrap">
+                                        <div class="call-box">
+                                            <span class="amount">2</span>
+                                            <p><i></i>Calls ringing</p>
+                                        </div>
+                                        <div class="call-box green">
+                                            <span class="amount">7</span>
+                                            <p><i></i>In call</p>
+                                        </div>
+                                        <ul class="results green">
+                                            <li>
+                                                <div class="el-group dark">
+                                                    <span class="el-group-addon">4</span>
+                                                    <p>Talking</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="el-group light">
+                                                    <span class="el-group-addon">1</span>
+                                                    <p>On hold / paused</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="el-group light">
+                                                    <span class="el-group-addon">2</span>
+                                                    <p>On wrap</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="average-value-wrap">
+                                        <div class="average-value-box">
+                                            <div>
+                                                <h4>Average wait time</h4>
+                                                <span class="color-green">
+                                                    00 : 03 : 24
+                                                </span>
+                                                <ul class="time-items">
+                                                    <li>hrs</li>
+                                                    <li>mins</li>
+                                                    <li>secs</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="average-value-box">
+                                            <div>
+                                                <h4>Average talk time</h4>
+                                                <span class="color-green">
+                                                    00 : 03 : 24
+                                                </span>
+                                                <ul class="time-items">
+                                                    <li>hrs</li>
+                                                    <li>mins</li>
+                                                    <li>secs</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="average-value-box">
+                                            <div>
+                                                <h4>Average wrap time</h4>
+                                                <span class="color-green">
+                                                    00 : 03 : 24
+                                                </span>
+                                                <ul class="time-items">
+                                                    <li>hrs</li>
+                                                    <li>mins</li>
+                                                    <li>secs</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-col">
+                                    <ul class="results">
+                                        <li>
+                                            <div class="el-group">
+                                                <span class="el-group-addon">149</span>
+                                                <p>Placed</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="el-group">
+                                                <span class="el-group-addon">11.4%</span>
+                                                <p>Connected</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="el-group">
+                                                <span class="el-group-addon">2.0%</span>
+                                                <p>Sales conversion</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="table-wrap">                                    
+                                        <table class="table-list">
+                                            <tr class="bg-green">
+                                                <td><div>Total Sales for date range</div></td>
+                                                <td>37</td>
+                                            </tr>
+                                            <tr>
+                                                <td><div>Target sales for date range</div></td>
+                                                <td>55</td>
+                                            </tr>
+                                            <tr>
+                                                <td><div>Percentage from target</div></td>
+                                                <td><span class="color-red">-17%</span></td>
+                                            </tr>
+                                        </table>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="breakdown-wrap">
+                            <hr>
+                            <h3>User breakdown</h3>
+                            <div class="m-clearfix">
+                                <div class="breakdown-table-wrap">
+                                    <div class="wrap-scroll-x">
+                                        <table class="table-list data-stats">
+                                            <tr>
+                                                <th style="width: 20%">
+                                                    Name
+                                                </th>
+                                                <th>
+                                                    Status
+                                                </th>
+                                                <th>
+                                                    Sales
+                                                </th>
+                                                <th>
+                                                    Target
+                                                </th>
+                                                <th>
+                                                    Calls
+                                                </th>
+                                                <th>
+                                                    Avg. Talk time
+                                                </th>
+                                                <th>
+                                                    Avg. Wrap
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="link-person" href="#">
+                                                        <img alt="Chris Pattison" src="images/temporary/person-img.png">
+                                                    </a>
+                                                    Chris Pattison  
+                                                </td>
+                                                <td>
+                                                    Talking <span class="color-green">00:03:23</span>
+                                                </td>
+                                                <td>5</td>
+                                                <td>7</td>
+                                                <td>
+                                                    35
+                                                </td>
+                                                <td>
+                                                    <span class="color-green">00:01:23</span>
+                                                </td>
+                                                <td>
+                                                    <span class="color-green">00:01:23</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="link-person" href="#">
+                                                        <img alt="Ini Edwards" src="images/temporary/person-img-ini.png">
+                                                    </a>
+                                                    Ini Edwards
+                                                </td>
+                                                <td>
+                                                    Talking <span class="color-green">00:03:23</span>
+                                                </td>
+                                                <td><span class="color-green">12</span></td>
+                                                <td>7</td>
+                                                <td>
+                                                    44
+                                                </td>
+                                                <td>
+                                                    <span class="color-green">00:01:23</span>
+                                                </td>
+                                                <td>
+                                                    <span class="color-green">00:01:23</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a class="link-person" href="#">
+                                                        <img alt="Olga" src="images/temporary/person-img-olga.png">
+                                                    </a>
+                                                    Ольга Швидкая
+                                                </td>
+                                                <td>
+                                                    Talking <span class="color-green">00:12:23</span>
+                                                </td>
+                                                <td><span class="color-green">12</span></td>
+                                                <td>7</td>
+                                                <td>
+                                                    44
+                                                </td>
+                                                <td>
+                                                    <span class="color-green">00:01:23</span>
+                                                </td>
+                                                <td>
+                                                    <span class="color-green">00:01:23</span>
+                                                </td>
+                                            </tr>       
+                                            <tr>
+                                                <td>
+                                                    <a class="link-person" href="#">
+                                                        <img alt="Alexander Davydov" src="images/temporary/person-img-alexander.png">
+                                                    </a>
+                                                    Alexander Davydov
+                                                </td>
+                                                <td>
+                                                    Talking <span class="color-green">00:12:23</span>
+                                                </td>
+                                                <td><span class="color-green">12</span></td>
+                                                <td>7</td>
+                                                <td>
+                                                    44
+                                                </td>
+                                                <td>
+                                                    <span class="color-green">00:01:23</span>
+                                                </td>
+                                                <td>
+                                                    <span class="color-green">00:01:23</span>
+                                                </td>
+                                            </tr>                                    
+                                        </table>                            
+                                    </div>
+                                </div>
+                                <div class="highest-wrap">
+                                    <div class="highest-box">
+                                        <h4>Highest Sales</h4>
+                                        <span class="color-green">12</span>
+                                        <span class="small-text">Ini Edwards</span>
+                                    </div>
+                                    <div class="highest-box">
+                                        <h4>Highest talk time</h4>
+                                        <span class="color-green">00 : 34 : 20</span>
+                                        <span class="small-text">Ben Davies</span>
+                                    </div>
+                                    <div class="highest-box">
+                                        <h4>Highest Sales</h4>
+                                        <span class="color-green">00 : 13 : 55</span>
+                                        <span class="small-text">Alexander Davydov</span>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <hr>
+                            <div class="wrap-btn m-clearfix">
+                                <a class="e-btn m-icon" href="#"><i class="material-icons">cloud_done</i>Export stats</a>
+                            </div>
+                        </div>
+                            
+                    </section>
+                    <!-- End outcomes -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="inner-wrapper-footer"><div class="copyright">&copy; 2015. All rights reserved.</div></div>
+    </footer>
+    <ul class="fix-position">
+        <li><a href="#" class="btn-fix-pos btn-dialing" data-toggle="modal" data-target="#dialing"><img src="images/icon-dialing.svg" alt="Dialing"></a></li>
+        <li><a href="#" class="btn-fix-pos btn-message" data-toggle="modal" data-target="#message"><img src="images/light-bulb.svg" alt="message"></a></li>
+    </ul>
+
+    <!-- Modals -->
+    <div id="data-fields" class="modal fade big-wrap-modal">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="b-data b-data-organise">
+                <div class="wrap-title">
+                    <div class="m-fr">
+                        <a class="e-btn-icon" href="#" data-dismiss="modal"><i class="material-icons">clear</i></a>
+                    </div>
+                    <h3>
+                        Organise data fields <span></span>
+                    </h3>
+                </div>
+                <ul class="list-elements">
+                    <li class="title-list">
+                        <div class="m-fl">
+                            <span>Use</span>
+                            Data heading
+                        </div>
+                        <div class="m-fr">Reorder</div>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox5" name="checkbox5" checked><label for="checkbox5">Home number</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox6" name="checkbox6" checked><label for="checkbox6">Mobile number</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox7" name="checkbox7" checked><label for="checkbox7">House/Flat number</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox8" name="checkbox8"><label for="checkbox8">Address Line 2</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox9" name="checkbox9"><label for="checkbox9">Address Line 3</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox10" name="checkbox10"><label for="checkbox10">County</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox11" name="checkbox11" checked><label for="checkbox11">Postcode</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox12" name="checkbox12"><label for="checkbox12">Country</label>
+                    </li>
+                </ul>
+                <div class="wrap-btn m-clearfix">
+                    <a href="#" class="e-btn m-cta m-icon"><i class="material-icons">check</i>Complete upload</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="message" class="modal fade bottom-position">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="message">
+                <div class="inner-wrap-message">
+                    <a class="e-btn-icon red-icon" href="#" data-dismiss="modal"><i class="material-icons">clear</i></a>
+                    <h3 class="title-message"><img src="images/light-bulb.svg" alt="message"> Feedback & Odeas</h3>
+                    <form action="#">
+                        <div class="wrap-item">
+                            <textarea name="messageText" id="messageText" placeholder="Type feedback and ideas about how we could improve Dialbase here..."></textarea>
+                        </div>
+                        <div class="b-ta-center">
+                            <button class="e-btn m-cta m-bg-grey" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="dialing" class="modal fade bottom-position" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="dialing">
+                <div class="inner-wrap-dialing">
+                    <form action="#">
+                        <div class="wrap-input">
+                            <button class="e-btn-icon clear-dialing-input" type="button"><i class="material-icons">backspace</i></button>
+                            <input class="dialing-input" id="dialing-input" name="dialing-input" type="text">
+                        </div>
+                        <table class="numerical-keyboard">
+                            <tr>
+                                <td><button type="button" value="1">1</button></td>
+                                <td><button type="button" value="2">2</button></td>
+                                <td><button type="button" value="3">3</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="4">4</button></td>
+                                <td><button type="button" value="5">5</button></td>
+                                <td><button type="button" value="6">6</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="7">7</button></td>
+                                <td><button type="button" value="8">8</button></td>
+                                <td><button type="button" value="9">9</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="*">*</button></td>
+                                <td><button type="button" value="0">0</button></td>
+                                <td><button type="button" value="#">#</button></td>
+                            </tr>
+                        </table>
+                        <button class="e-btn m-cta m-big" type="submit"><i class="material-icons">call</i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/lib/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/bootstrap-select.js"></script>
+<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

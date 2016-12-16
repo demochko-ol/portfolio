@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesomex</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">   
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="header">
+        <!-- Static navbar -->
+        <nav class="navbar">
+            <div class="header-wrap">
+                <div class="container-fluid">
+                    <div class="navbar-header">                    
+                        <a href="#" class="navbar-brand">Awesomex</a>
+                    </div>
+                    <!-- <div class="" id="navbar"> -->
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">TOP LISTS</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="input-group search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div><!-- /input-group -->
+
+                            <button type="button" class="btn login" data-toggle="modal" data-target="#login-modal">
+                                Log in
+                            </button>
+                        </form>
+                    <!--</div>/.nav-collapse -->
+                </div><!--/.container-fluid -->                
+            </div>
+        </nav>
+    </header>
+<div class="wrapper">
+    <aside class="sidebar" id="sidebar">
+        <div class="profile">
+            <div class="img-wrap">
+                <a href="#" class="inner">
+                    <img src="images/avatar.jpg" alt="">
+                </a>
+            </div>
+            <div class="name">
+                <h4><a href="#">Katie Caramel</a></h4>
+            </div>
+        </div> 
+        <div class="sidebar-content tags_container">
+            <a href="#" class="tag">css</a>
+            <a href="#" class="tag">movies</a>
+            <a href="#" class="tag btn-success">travel</a>
+            <a href="#" class="tag">awesomex</a>
+        </div>    
+        <hr>
+        <div class="sidebar-content">
+            <button class="btn btn-danger"><i class="create-icon"></i>Create new list</button>
+        </div>        
+    </aside>
+    <div class="menu">
+        <button class="sidebar-toggle" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <ul class="menu-items">
+            <li><a href="#" class="followed"><span class="badge">2</span></a></li>
+            <li><a href="#" class="faved" data-toggle="tooltip" data-placement="right" data-original-title="My Collections"></a></li>
+            <li><a href="#" class="lists"></a></li>
+            <li><a href="#" class="settings"></a></li>
+        </ul>
+    </div>
+    <main class="main-content">        
+        <div class="content">
+            <button class="btn-create"></button>            
+            <div class="info-container clearfix">
+                <div class="progress-profile">
+                    <div class="pie">
+                        <div class="clip1">
+                            <div class="slice1" style="transform: rotate(39.6deg);"></div>
+                        </div>
+                        <div class="clip2">
+                            <div class="slice2" style="transform: rotate(0deg);"></div>
+                        </div>
+                        <div class="profile">
+                            <div class="img-wrap">
+                                <a href="#" class="inner">
+                                    <img src="images/avatar.jpg" alt="">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>    
+                    <div class="name">
+                        <h4><a href="#">Katie Caramel</a></h4>
+                    </div>                
+                </div>
+                <div class="profile-info">
+                    <ul>
+                        <li><a href="#"><span>14</span><p>LISTS</p></a></li>
+                        <li><a href="#"><span>43K</span><p>LIKES</p></a></li>
+                        <li class="orange"><a href="#"><span>250</span><p>FOLLOWERS</p></a></li>
+                        <li><a href="#"><span>67</span><p>FOLLOWING</p></a></li>
+                    </ul>
+                </div>
+                <div class="tags_container">
+                    <a href="#" class="tag">css</a>
+                    <a href="#" class="tag">movies</a>
+                    <a href="#" class="tag">css</a>
+                    <a href="#" class="tag btn-primary">movies</a>
+                    <a href="#" class="tag btn-success">travel</a>
+                    <a href="#" class="tag btn-warning">awesomex</a>
+                    <a href="#" class="tag btn-info">travel</a>
+                    <a href="#" class="tag">awesomex</a>
+                    <a href="#" class="tag">css</a>
+                    <a href="#" class="tag">movies</a>
+                    <a href="#" class="tag">css</a>
+                    <a href="#" class="tag">movies</a>
+                    <a href="#" class="tag btn-success">travel</a>
+                    <a href="#" class="tag">awesomex</a>
+                    <a href="#" class="tag">travel</a>
+                    <a href="#" class="tag btn-danger">awesomex</a>
+                </div> 
+            </div>
+            <div class="container-fluid">
+                <div class="filter clearfix">
+                    <select name="views" id="views">
+                        <option value="Most Views">Most Views</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                    <h6>MY FOLLOWERS</h6>
+                </div>
+                <div class="followers-wrap">
+                    <div class="follower">
+                        <span class="counter">35<i></i></span>
+                        <div class="img-wrap">
+                            <a class="inner" href="#">
+                                <img alt="" src="images/avatar.jpg">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h4>
+                                <a href="#">Anton Karapuzov</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="follower even">
+                        <span class="counter">35<i></i></span>
+                        <div class="img-wrap">
+                            <a class="inner" href="#">
+                                <img alt="" src="images/avatar2.jpg">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h4>
+                                <a href="#">Television</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="follower">
+                        <span class="counter">35<i></i></span>
+                        <div class="img-wrap">
+                            <a class="inner" href="#">
+                                <img alt="" src="images/avatar.jpg">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h4>
+                                <a href="#">Anton Karapuzov</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="follower even">
+                        <span class="counter">35<i></i></span>
+                        <div class="img-wrap">
+                            <a class="inner" href="#">
+                                <img alt="" src="images/avatar2.jpg">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h4>
+                                <a href="#">Television</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="follower">
+                        <span class="counter">35<i></i></span>
+                        <div class="img-wrap">
+                            <a class="inner" href="#">
+                                <img alt="" src="images/avatar.jpg">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h4>
+                                <a href="#">Anton Karapuzov</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="follower even">
+                        <span class="counter">35<i></i></span>
+                        <div class="img-wrap">
+                            <a class="inner" href="#">
+                                <img alt="" src="images/avatar2.jpg">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h4>
+                                <a href="#">Television</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="follower">
+                        <span class="counter">35<i></i></span>
+                        <div class="img-wrap">
+                            <a class="inner" href="#">
+                                <img alt="" src="images/avatar.jpg">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h4>
+                                <a href="#">Anton Karapuzov</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="follower even">
+                        <span class="counter">35<i></i></span>
+                        <div class="img-wrap">
+                            <a class="inner" href="#">
+                                <img alt="" src="images/avatar2.jpg">
+                            </a>
+                        </div>
+                        <div class="name">
+                            <h4>
+                                <a href="#">Television</a>
+                            </h4>
+                        </div>
+                    </div>                    
+                </div>
+                <a href="#" class="btn show"><i></i>Show more</a>
+            </div>
+        </div>
+    </main>
+    <div class="comments-container">
+        <div class="comments-content">
+        <div class="top">
+            <div class="filter clearfix">
+                <select name="related" id="related">
+                    <option value="Related">Related</option>
+                    <option value="1">1</option>
+                    <option value="2">1</option>
+                </select>
+                <h6>DISCUSSION</h6>
+            </div>
+            <div class="media"> 
+                <div class="media-left"> 
+                    <div class="img-wrap">
+                        <a href="#" class="inner"> 
+                            <img alt="36x36" data-src="holder.js/36x36" class="media-object" style="width: 36px; height: 36px;" src="images/user.png" data-holder-rendered="true"> 
+                        </a> 
+                    </div>
+                </div> 
+                <div class="media-body"> 
+                    <textarea name="discussion" id="discussion" cols="15" rows="2" placeholder="Write something"></textarea>
+                </div> 
+            </div>
+        </div>
+        <div class="media-wrap">
+            <div class="media"> 
+                <div class="media-left">                        
+                    <div class="img-wrap">
+                        <a href="#" class="inner"> 
+                            <img alt="36x36" data-src="holder.js/36x36" class="media-object" style="width: 36px; height: 36px;" src="images/user.png" data-holder-rendered="true"> 
+                        </a> 
+                    </div>
+                </div> 
+                <header>
+                    <h4 class="media-heading"><a href="#">Michael Scott</a> <span class="time">12 HOURS AGO</span></h4>
+                </header>
+                <div class="media-body">                      
+                    <p>Directed by Francis Ford Coppola with a cast including Brando, Sheen, Duvall and Hopper; it’s an epic ﬁlm encapsulating the madness of the Vietnam war.</p>
+                    <p>The visuals are stunning, the acting superb and the production was as epic, chaotic and mad behind the camera as on it with no script, drink, drugs, ﬁre, re-casts, tigers, bankruptcy, heart attacks and grave robbery (seriously).</p>
+                    <p>I ﬁrst watched it after studying the <a href="#">Joseph Conrad book</a> Heart of Darkness (on which the ﬁlm is loosely based) and wrote an essay in my English Literature exam entirely using the ﬁlm as my reference. I still managed to scrape a pass, but have never completed the book</p>
+                    <footer class="clearfix">
+                        <button class="btn btn-default btn-reply"><i></i>Reply</button>
+                        <a href="#" class="btn-like btn-blue"><span>214</span></a>
+                        <button class="btn btn-default btn-share">Share</button>
+                    </footer>
+                </div> 
+            </div>
+            <div class="media"> 
+                <div class="media-left">                         
+                    <div class="img-wrap">
+                        <a href="#" class="inner"> 
+                            <img alt="36x36" data-src="holder.js/36x36" class="media-object" style="width: 36px; height: 36px;" src="images/user2.png" data-holder-rendered="true"> 
+                        </a> 
+                    </div>
+                </div> 
+                <header>
+                    <h4 class="media-heading"><a href="#">Saul Goodman</a> <span class="time">12 HOURS AGO</span></h4> 
+                </header>
+                <div class="media-body">                         
+                    <p>With a cast including it’s an epic ﬁlm encapsulating the madness of the Vietnam war.  The visuals are stunning, the acting superb and the production.</p>
+                    <p>Was as epic, chaotic and mad behind the camera as in my English Literature exam entirely using the ﬁlm as my reference. I still managed to scrape a pass, but have never completed the book</p>
+                    <footer class="clearfix">
+                        <button class="btn btn-default btn-reply"><i></i>Reply</button>
+                        <a href="#" class="btn-like btn-white"><span>214</span></a>
+                        <button class="btn btn-default btn-share">Share</button>
+                    </footer>
+                </div> 
+            </div>
+            <div class="media"> 
+                <div class="media-left">                        
+                    <div class="img-wrap">
+                        <a href="#" class="inner"> 
+                            <img alt="36x36" data-src="holder.js/36x36" class="media-object" style="width: 36px; height: 36px;" src="images/user2.png" data-holder-rendered="true"> 
+                        </a> 
+                    </div>
+                </div> 
+                <header>
+                    <h4 class="media-heading"><a href="#">Saul Goodman</a> <span class="time">12 HOURS AGO</span></h4>                        
+                </header>
+                <div class="media-body">  
+                    <p>With a cast including it’s an epic ﬁlm encapsulating the madness of the Vietnam war.  The visuals are stunning, the acting superb and the production.</p>
+                    <p>Was as epic, chaotic and mad behind the camera as in my English Literature exam entirely using the ﬁlm as my reference. I still managed to scrape a pass, but have never completed the book</p>
+                    <footer class="clearfix">
+                        <button class="btn btn-default btn-reply"><i class="reply-icon"></i>Reply</button>
+                        <button class="btn btn-default btn-share">Share</button>
+                    </footer>
+                </div> 
+            </div>                
+        </div>
+        </div>
+    </div>
+    <div class="comments-bg"></div>
+</div>
+<footer>
+    <div class="container">
+        
+    </div>
+</footer>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="left-container">                    
+                <a href="#" class="navbar-brand">Awesomex</a>
+                <h2>Now.</h2>
+                <p>You can easy make ur own lists.</p>
+                <button class="btn">SIGN UP FOR FREE</button>
+            </div>
+            <div class="right-container">
+                <div class="tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#login" data-toggle="tab">LOG IN</a></li>
+                        <li><a href="#signup" data-toggle="tab">Sign up</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="login">
+                            <form action="./">                                    
+                                <p>Arrivera cailloux ces defoncat cornette les regardez ifs activite. Massacre casernes en la philippe courages aussitot ah longeait</p>
+                                <div class="form-group">
+                                    <a href="#" class="btn btn-google">GOOGLE</a>
+                                    <a href="#" class="btn btn-fb">FACEBOOK</a>                                    
+                                </div>
+                                <p class="or">or</p>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="e-mail" id="e-mail" placeholder="E-mail">
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="password">
+                                </div>
+                                <button class="btn btn-danger">log in</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="signup">                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="signup-e-mail" id="signupe-mail" placeholder="E-mail">
+                                <input type="password" class="form-control" name="signup-password" id="signup-password" placeholder="password">                                    
+                            </div>
+                            <button class="btn btn-danger">Sign up</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
+  
+
+</body></html>

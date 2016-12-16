@@ -1,0 +1,56 @@
+
+/*------ NEW VARIABLES ------*/
+
+$input-height:			40px;
+
+$files:				"../images/";
+
+$red:				#da2d02;
+$blue-dark:			#23283c;
+$blue-light:		#0054E2;
+$blue:				#2a344f;
+$green-light:		#7BB432;
+$grey:				#505050;
+$grey-light:		#d9d9d9;
+$warning-color:		#D26220;
+$primary-color:		#4E57C1;
+$info-color:		#2CC18D;
+$text-color-b:		#384561;
+$text-color-g:		#424242;
+
+
+
+$select-color: $blue-light;
+$select-background: #fff;
+$select-width: 115px;
+$select-height: 36px;
+
+
+
+
+@mixin bg-size($size...){	
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	background-size: $size;
+}
+@mixin bd-radius($radius){	
+	-wevkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin img-wrap($width, $height){	
+	width: $width;
+	height: $height;
+	text-align: center;
+	display: block;
+	a.inner{
+		display: table-cell;
+		width: $width;
+		height: $height;
+		vertical-align: middle;
+		img{
+			max-width: $width;
+			max-height: $height;
+		}
+	}	
+}

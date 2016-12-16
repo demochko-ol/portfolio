@@ -1,0 +1,247 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	@include bx-sizing(border-box);
+}
+
+html{
+	height: 100%;
+}
+html,
+body{
+	font: 16px/1.2 "Arial";
+	height: 100%;
+}
+/* 
+----------Tipography---------- */
+h1{
+	font-size: 40px;
+	small{
+		display: block;
+	}
+}
+h2{
+	font-size: 30px;
+}
+h3{
+	font-size: 26px;
+}
+h4{}
+h5{}
+h6{}
+p{
+
+}
+a{
+	
+}
+/* 
+----------End Tipography---------- */
+.btn{
+	@include btn($theme-color);
+	@include bd_radius(5px);
+
+}
+/* 
+----------Grid---------- */
+.clearfix{
+	&:before,
+	&:after{
+		content: '';
+
+	}
+}
+.container{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+/* 
+----------End Grid---------- */
+
+/* 
+----------Layout---------- */
+.wrapper{
+	height: 100%;
+	min-height: 100%;
+	height: auto!important;
+	min-width: 320px;
+}
+main{
+	padding: 0 0 $f-height;
+}
+section{
+	padding: 25px 0;
+}
+.footer{
+	height: $f-height;
+	margin-top: -$f-height;	
+}
+/* 
+----------End Layout---------- */
+
+
+/* 
+----------Header---------- */
+.header{
+	background: url("#{$files}bg1.jpg") fixed center center no-repeat;
+	color: #fff;
+	text-align: center;
+	padding: 50px;
+	position: relative;
+	.container{
+		position: absolute;
+		display: table;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		right: 0;
+		.header-content{
+			height: 100%;
+			display: table-cell;
+			vertical-align: middle;
+			padding-bottom: 50px;
+		}
+	}
+	.logo{
+		display: inline-block;
+		a{
+			color: #34CCFE;
+			text-decoration: none;
+			font-size: 22px;
+		}
+	}
+	.main-nav{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		/* background: #fff; */
+		width: 100%;
+		font-size: 12px;
+		ul{
+			/* float: right; */
+		}
+		li{
+			display: table-cell;
+			padding: 15px 0;
+			width: 25%;
+			a{
+				color: $theme-color;
+				padding: 0 15px;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
+	}
+	h1{
+		/* background: rgba(0, 48, 91, 0.4); */
+		color: #fff;
+	}
+	.list-inline{
+		@include list-inline();
+		text-transform: uppercase;
+		font-size: 20px;
+		li{
+			margin: 0 10px;
+			position: relative;
+			&:after{
+				position: absolute;
+				content: '';
+				top: 50%;
+				margin-top: -4px;
+				width: 6px;
+				height: 6px;
+				@include bd-radius(50%);
+				right: -14px;
+				background: #fff;
+			}
+			&:last-child:after{
+				display: none;
+			}
+		}
+	}
+}
+/* 
+----------End Header---------- */
+
+/* 
+----------Middle---------- */
+.about{
+	background: $light-grey;
+	padding: 40px 0;
+}
+.skills{
+	position: relative;
+	&:before{
+		position: absolute;
+		content: "";
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		background: url("#{$files}devices.jpg") fixed center center no-repeat;
+		opacity: .3;
+	}
+}
+/* 
+----------End Middle---------- */
+
+
+/* 
+----------Portfolio Section---------- */
+
+.portfolio{
+	background: $light-grey;
+	padding: $grid-padding * 2 0;
+	.works{
+		@include inline-block(top);
+		&>li{
+			width: 50%;
+			padding: 0 $grid-padding;
+			font: 16px/1.2 "Arial";
+			margin-bottom: $grid-padding * 2;
+		}
+		a{
+			display: block;
+			position: relative;
+			overflow: hidden;
+			color: #fff;
+			img{
+				width: 100%;
+				display: block;
+				@include transition(all 0.2s linear);
+			}
+			&:hover{
+				img{
+					@include transform(scale(1.02));
+				}
+				.description-wrap{
+					background: rgba(65,183,196,0.9);
+				}
+				.description{
+					opacity: 1;
+				}
+			}
+		}
+		.description-wrap{
+			@include transition(all 0.2s linear);
+			position: absolute;
+			width: 50%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			padding: $grid-padding;
+			background: rgba(0,48,91,0.75);
+			text-align: center;
+		}
+		.description{
+			opacity: 0;
+			@include transition(all 0.2s linear);
+		}
+	}
+		
+
+}
+
+/* 
+----------End Portfolio Section---------- */

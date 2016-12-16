@@ -1,0 +1,29 @@
+@mixin bg-size($size...){
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	background-size: $size;
+}
+@mixin bd-radius($radius...){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin bx-sizing($size){
+	-webkit-box-sizing: $size;
+	-moz-box-sizing: $size;
+	box-sizing: $size;
+}
+@mixin list-inline($align){
+	list-style: none;
+	li{
+		display: inline-block;
+		vertical-align: $align;
+	}
+}
+@mixin focus(){
+	&:focus,
+	&:active{
+		outline: none;
+		
+	}
+}

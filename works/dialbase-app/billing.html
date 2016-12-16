@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dialbase - Billing</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,300,300italic,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="settings">
+<div class="wrapper">
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="logo"><a href="index.html">Dialbase</a></div>
+            <div class="nav-right">
+                <a class="link-person" href="#"><img src="images/temporary/person-img-ini.png" alt="Ini Edwards"></a>
+            </div>
+        </header>
+        <div class="container-wrapper">
+            <div class="container">
+                <form action="#">
+                    <h1>Account Billing & Payments Options</h1>
+                    <div class="wrap-table">
+                        <div class="b-table">
+                            <div class="b-cell b-credit">
+                                <div class="wrap-title">
+                                    <h3>
+                                        Current credit | <span class="color-green"> £727.52</span>
+                                    </h3>
+                                </div>
+                                <div class="b-credit-desc">
+                                    <p class="text-center">Usage since last top-up <time datetime="2016-01-20">(20/01/2016)</time></p>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-rez">
+                                        <div class="m-fl">
+                                            Used £172.48
+                                        </div>
+                                        <div class="m-oh">
+                                            Remaining £727.52 <a href="#">Add credit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-cell b-top-ups">
+                                <div class="wrap-title">
+                                    <div class="m-fr">
+                                        <label class="toggle toggle-lg" for="toggleRecording">
+                                            <span class="on">On</span>
+                                            <input id="toggleRecording" type="checkbox"  name="toggle">
+                                            <span class="off">Off</span>
+                                        </label>
+                                    </div>
+                                    <h3>
+                                        Automatic top-ups
+                                    </h3>
+                                </div>
+                                <div class="b-desc b-off">
+                                    <p>Automatic top-ups are switched off which could lead to unnecessary downtime when you run out.</p>
+                                    <p>
+                                        You can add more credit at any time by clicking on the button below or <a href="#">switch to Automatic top-ups</a> to save yourself time in the future.
+                                    </p> 
+                                    <div class="wrap-btn m-clearfix">
+                                        <a class="e-btn m-icon" href="#" data-toggle="modal" data-target="#add-credit">
+                                            <i class="material-icons">add</i>
+                                            Add Credit
+                                        </a>
+                                    </div>                                   
+                                </div>
+                                <div class="b-desc b-on">
+                                    <p>Next time you’ve used all your credit we’ll save you time and effort by automatically debiting your account for the same sum again. We’ll also export your previous bills and usage statements which can be found invoices below.</p>
+                                    <p>
+                                        Your automatic top-up amount is current set at <span class="color-green">£900</span>
+                                    </p> 
+                                    <div class="wrap-btn m-clearfix">
+                                        <a class="e-btn m-icon" href="#"  data-toggle="modal" data-target="#payment-options">
+                                            <i class="material-icons">settings</i>
+                                            Payment options
+                                        </a>
+                                    </div>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="wrap-table">
+                        <div class="b-table">
+                            <div class="b-cell b-tariff">
+                                <div class="wrap-title">
+                                    <h3>
+                                        Your Dialbase tariff
+                                        <time datetime="2016-02-01">since 01/02/2016</time>
+                                    </h3>
+                                </div>
+
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <span class="m-fr">
+                                                        <i class="material-icons">keyboard_arrow_down</i>
+                                                    </span>
+                                                    <span class="m-fl">
+                                                        User accounts <span class="badge">(7)</span>
+                                                    </span>
+                                                    <span class="m-oh">
+                                                        <span class="color-green">£25</span> each per month
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <p>Each active user account is charge at £25 per month. These are charged at the beginning of each month and if a user is added mid-billing cycle then the money will be debit immediately from your remaining credit. If you have insufficient funds you will have to top-up your account prior to adding additional users.</p>
+                                                <p><a href="#">Manage user accounts</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <span class="m-fr">
+                                                        <i class="material-icons">keyboard_arrow_down</i>
+                                                    </span>
+                                                    <span class="m-fl">
+                                                        Calls
+                                                    </span>
+                                                    <span class="m-oh">
+                                                        <span class="color-green">1.5p</span>  per minute
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <p>Calls are billed a 1.5p per minute. Minutes are only counted when a call connects and we round all calls up the nearest minute.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <span class="m-fr">
+                                                        <i class="material-icons">keyboard_arrow_down</i>
+                                                    </span>
+                                                    <span class="m-fl">
+                                                        Recording
+                                                    </span>
+                                                    <span class="m-oh">
+                                                        <span class="color-green">0.05p</span>  per minute
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <p>Recorded calls are billed a 0.05p per minute and can be switched on and  off on a campaign by campaign basis so you only have to record the campaigns that you feel necessary.</p>
+                                                <p>Call recordings use up your storage allowance and you’ll be notified if you reach the end of the storage available in your chosen plan.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    <span class="m-fr">
+                                                        <i class="material-icons">keyboard_arrow_down</i>
+                                                    </span>
+                                                    <span class="m-fl">
+                                                        Phone numbers <span class="badge">(2)</span>
+                                                    </span>
+                                                    <span class="m-oh">
+                                                        <span class="color-green">£1</span>   a month per number
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="panel-body">
+                                                <p>Phone numbers are charge at £1 per number per month. You can add/remove numbers or assign them to invidual campaigns at any time by visiting the <a href="#">My Numbers</a> section of the settings page.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFive">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    <span class="m-fr">
+                                                        <i class="material-icons">keyboard_arrow_down</i>
+                                                    </span>
+                                                    <span class="m-fl">
+                                                        Cloud Storage
+                                                    </span>
+                                                    <span class="m-oh">
+                                                        <span class="color-green">Free</span>   500GB <span class="badge">(72GB Used)</span> 
+                                                    </span>
+                                                    
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                            <div class="panel-body">
+                                                <p>Your cloud storage is used to store all call recordings as well as data that you have uploaded or created in dialbase including invoices and scripts. </p>
+
+                                                <ul class="wrap-inline-block">
+                                                    <li>
+                                                        <input id="radio1" type="radio" checked="" name="radio1">
+                                                        <label for="radio1">Free 500GB <span class="badge">(72GB Used)</span></label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="radio2" type="radio" name="radio1">
+                                                        <label for="radio2">1TB for £10 per month</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="radio3" type="radio" name="radio1">
+                                                        <label for="radio3">5TB for £20 per month</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="radio4" type="radio" name="radio1">
+                                                        <label for="radio4">Unlimited for £26 per month</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-cell b-invoices">
+                                <div class="wrap-title">
+                                    <h3>
+                                        Invoices
+                                    </h3>
+                                </div>
+                                <div class="wrap-btn m-clearfix">
+                                    <div class="m-fr">                      
+                                        <a href="#" class="e-btn m-icon"><i class="material-icons">insert_drive_file</i>View</a>
+                                        <a href="#" class="e-btn m-secondary"><i class="material-icons">cloud_download</i>Download</a>
+                                    </div>
+                                    <div class="m-oh">
+                                        <p class="bill">Last bill:</p> 
+                                        <p class="bill-rez"><span class="color-green">£857.48 </span>
+                                            <span class="time">
+                                                <time datetime="2016-02-01">01/02/2016</time> - <time datetime="2015-12-20">20/12/2015</time>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <ul class="list-elements">
+                                    <li class="title-list">
+                                        Date range
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <a class="e-btn-icon" href="#">
+                                                <i class="material-icons">insert_drive_file</i>
+                                            </a>
+                                            <a class="e-btn-icon" href="#">
+                                                <i class="material-icons">cloud_download</i>
+                                            </a>
+                                        </div>
+                                        <div class="time"><time datetime="2016-02-01">03/12/2015</time> - <time datetime="2016-02-01">20/12/2015</time></div>
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <a class="e-btn-icon" href="#">
+                                                <i class="material-icons">insert_drive_file</i>
+                                            </a>
+                                            <a class="e-btn-icon" href="#">
+                                                <i class="material-icons">cloud_download</i>
+                                            </a>
+                                        </div>
+                                        <div class="time"><time datetime="2016-02-01">17/11/2015</time> - <time datetime="2016-02-01">03/12/2015</time></div>
+                                    </li>
+                                </ul>                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="inner-wrapper-footer"><div class="copyright">&copy; 2015. All rights reserved.</div></div>
+    </footer>
+    <ul class="fix-position">
+        <li><a href="#" class="btn-fix-pos btn-dialing" data-toggle="modal" data-target="#dialing"><img src="images/icon-dialing.svg" alt="Dialing"></a></li>
+        <li><a href="#" class="btn-fix-pos btn-message" data-toggle="modal" data-target="#message"><img src="images/light-bulb.svg" alt="message"></a></li>
+    </ul>
+
+    <!-- Modals -->
+    <div id="add-credit" class="modal fade big-wrap-modal">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="b-data b-data-organise">
+                <div class="wrap-title">
+                    <div class="m-fr">
+                        <a class="e-btn-icon red-icon" href="#" data-dismiss="modal"><i class="material-icons">clear</i></a>
+                    </div>
+                    <h3>
+                        Add credit
+                    </h3>
+                </div>
+                <div class="b-add row">
+                    <div class="col-md-6">
+                        <div class="wrap-item">
+                            <label for="input-item-1">Name on card</label>
+                            <input id="input-item-1" type="text" placeholder="" value="MRIM EDWARDS">
+                        </div>
+                        <div class="wrap-item">
+                            <label for="input-item-2">Account Number</label>
+                            <input id="input-item-2" type="text" placeholder="">
+                        </div>
+                        <div class="wrap-item">
+                            <label for="input-item-3">Sortcode</label>
+                            <input id="input-item-3" type="text" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wrap-item">
+                        <p>How much credit would you like to add?</p>
+                            <label for="input-item-4"></label>
+                            <input id="input-item-4" type="text" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="wrap-btn m-clearfix">
+                    <a href="#" class="e-btn m-cta m-icon"><i class="material-icons">check</i>Add credit now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="payment-options" class="modal fade big-wrap-modal">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="b-data b-data-organise">
+                <div class="wrap-title">
+                    <div class="m-fr">
+                        <a class="e-btn-icon red-icon" href="#" data-dismiss="modal"><i class="material-icons">clear</i></a>
+                    </div>
+                    <h3>
+                        Payment Options
+                    </h3>
+                </div>
+                <div class="b-add row">
+                    <div class="col-md-6">
+                        <div class="wrap-item">
+                            <label for="input-item-5">Name on card</label>
+                            <input id="input-item-5" type="text" placeholder="" value="MRIM EDWARDS">
+                        </div>
+                        <div class="wrap-item">
+                            <label for="input-item-6">Account Number</label>
+                            <input id="input-item-6" type="text" placeholder="">
+                        </div>
+                        <div class="wrap-item">
+                            <label for="input-item-7">Sortcode</label>
+                            <input id="input-item-7" type="text" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wrap-item">
+                            <p>Please use the follow controls to set the shedule and amount of credit you'd like to add to your dialbase account</p>
+                            <label for="input-item-8">Amount</label>
+                            <input id="input-item-8" type="text" placeholder="">
+                        </div>
+                        <ul class="wrap-inline-block">
+                            <li>
+                                <div class='r-wrap'>                                    
+                                    <input id="radio5" type="radio" name="radio5" checked="">
+                                    <label for="radio5"> 
+                                        First day of each 
+                                    </label>
+                                    <select class="selectpicker" name="Month" id="month">
+                                        <option value="Month">Month</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select> 
+                                </div>
+                            </li>
+                            <li>
+                                <div class='r-wrap'>
+                                    <input id="radio6" type="radio" name="radio5">
+                                    <label for="radio6">When you reach last 1% of credit</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="wrap-btn m-clearfix">
+                    <a href="#" class="e-btn m-cta m-icon"><i class="material-icons">check</i>Save changes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="message" class="modal fade bottom-position">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="message">
+                <div class="inner-wrap-message">
+                    <a class="e-btn-icon red-icon" href="#" data-dismiss="modal"><i class="material-icons">clear</i></a>
+                    <h3 class="title-message"><img src="images/light-bulb.svg" alt="message"> Feedback & Odeas</h3>
+                    <form action="#">
+                        <div class="wrap-item">
+                            <textarea name="messageText" id="messageText" placeholder="Type feedback and ideas about how we could improve Dialbase here..."></textarea>
+                        </div>
+                        <div class="b-ta-center">
+                            <button class="e-btn m-cta m-bg-grey" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="dialing" class="modal fade bottom-position" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="dialing">
+                <div class="inner-wrap-dialing">
+                    <form action="#">
+                        <div class="wrap-input">
+                            <button class="e-btn-icon clear-dialing-input" type="button"><i class="material-icons">backspace</i></button>
+                            <input class="dialing-input" id="dialing-input" name="dialing-input" type="text">
+                        </div>
+                        <table class="numerical-keyboard">
+                            <tr>
+                                <td><button type="button" value="1">1</button></td>
+                                <td><button type="button" value="2">2</button></td>
+                                <td><button type="button" value="3">3</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="4">4</button></td>
+                                <td><button type="button" value="5">5</button></td>
+                                <td><button type="button" value="6">6</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="7">7</button></td>
+                                <td><button type="button" value="8">8</button></td>
+                                <td><button type="button" value="9">9</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="*">*</button></td>
+                                <td><button type="button" value="0">0</button></td>
+                                <td><button type="button" value="#">#</button></td>
+                            </tr>
+                        </table>
+                        <button class="e-btn m-cta m-big" type="submit"><i class="material-icons">call</i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/lib/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/bootstrap-select.js"></script>
+<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

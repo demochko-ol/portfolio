@@ -1,0 +1,114 @@
+
+
+ /*!
+ * BOOTSTRAP VARIABLES & MIXINS
+ */
+
+/*  $grid-gutter-width:         44px; */
+ $grid-padding:         	 60px;
+
+
+
+$container-ml-desktop:      (980px + $grid-gutter-width) !default;
+//For `$screen-ml-min` and up.
+$container-ml:                 $container-ml-desktop !default;
+
+
+
+$screen-ml:                  1032px !default;
+$screen-ml-min:              $screen-ml !default;
+$screen-ml-max:              ($screen-lg-min - 1) !default;
+$screen-ml-desktop:          $screen-ml-min !default;
+
+
+
+$container-elg-desktop:      (1380px + $grid-padding) !default;
+//For `$screen-elg-min` and up.
+$container-elg:                 $container-elg-desktop !default;
+
+$screen-elg:                  1440px !default;
+$screen-elg-min:              $screen-elg !default;
+$screen-elg-desktop:          $screen-elg-min !default;
+
+
+
+ /*!
+ * NEW VARIABLES & MIXINS
+ */
+
+ $files:					"../images/";
+$icon-font-path:			"../fonts/";
+
+$foot-height:				276px;
+$foot-height-sm:			236px;
+$foot-height-xs:			300px;
+
+$green:						#0f9d58;
+$dark-gray:					#4c4c4c;
+$light-gray:				#7f8c8d;
+$orange:					#ff5722;
+$pink: 						#e91e63;
+$blue: 						#03a9f4;
+$yellow: 						#ffc107;
+
+
+
+/* -------- MIXINS -------- */
+
+@mixin bg_size($size...){
+	-webkit-background-size: $size;
+    -moz-background-size: $size;
+    background-size: $size;
+}
+
+@mixin bd-radius($radius...) {
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin bx-shadow($shadow...) {
+	-moz-box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+@mixin list-table($li-width){
+  @include list-unstyled;
+  display: table;
+  > li {
+    display: table-cell;
+    width: $li-width;
+  }
+}
+@mixin list-inline(){
+  @include list-unstyled;
+  > li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+@mixin img-container($width, $height){
+	display: block;
+	width: $width;
+	height: $height;
+	text-align: center;
+	margin-right: 25px;
+	.inner{
+		display: table-cell;
+		width: $width;
+		height: $height;
+		vertical-align: middle;
+		img{
+			max-width: $width;
+			max-height: $height;
+		}
+	}
+}
+@mixin flex(){
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+}

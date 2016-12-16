@@ -1,0 +1,808 @@
+//
+// Styles
+// --------------------------------------------------
+/*------ Template -------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+body{
+    font: 22px/120% 'ubunturegular', arial, sans-serif;
+    color: $grey;
+   /*  opacity: 0.5;
+   background: url('#{$files}bg.jpg') top center no-repeat; */
+   
+    
+}
+.wrapper {
+    height: auto !important;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.header{
+}
+.container{
+  @media (min-width: $screen-ml-min) and (max-width: $screen-lg-min){
+    width: $container-ml;
+  }
+}
+main{
+    @media all and (max-width: $screen-xs-max){
+        font: 20px/120% 'ubunturegular', arial, sans-serif;
+    }
+}
+.footer {
+    width: 100%;
+    position: relative;
+}
+
+/*------ Typography -------*/
+
+
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('../fonts/ubuntu-l-webfont.eot');
+    src: url('../fonts/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-l-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-l-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-l-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-l-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntulight_italic';
+    src: url('../fonts/ubuntu-li-webfont.eot');
+    src: url('../fonts/ubuntu-li-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-li-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-li-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-li-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-li-webfont.svg#ubuntulight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('../fonts/ubuntu-m-webfont.eot');
+    src: url('../fonts/ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-m-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-m-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-m-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-m-webfont.svg#ubuntumedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('../fonts/ubuntu-r-webfont.eot');
+    src: url('../fonts/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-r-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-r-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-r-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-r-webfont.svg#ubunturegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntuitalic';
+    src: url('../fonts/ubuntu-ri-webfont.eot');
+    src: url('../fonts/ubuntu-ri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-ri-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-ri-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-ri-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-ri-webfont.svg#ubuntuitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus{
+        outline: none;
+        text-decoration: none;
+    }
+}
+p{
+	margin-bottom: 18px;
+}
+img{
+	outline: none;
+	border: none;
+}
+
+h1{
+    font: 2.571em/1.2em 'ubuntuitalic', arial, sans-serif;
+    text-transform: uppercase;
+}
+h2{
+
+   font: 1em/1.2em 'ubuntumedium', arial, sans-serif;
+    margin-bottom: 12px;
+}
+h3{    
+    font: 1.227em/1.2em 'ubuntumedium', arial, sans-serif;
+    text-transform: uppercase;
+    color: $orange;
+    margin-top: 1.939em;
+    margin-bottom: 1em;
+}
+h5{
+    font: 1em/1.2em 'ubuntumedium', arial, sans-serif;
+}
+h6{
+    font: 1em/1.2em 'ubuntuitalic', arial, sans-serif;    
+}
+
+ul,ol{
+    list-style: none;
+}
+dl{
+    font: 0.955em/1.2em 'ubuntulight_italic', arial, sans-serif;
+    
+    dt{
+        float: left;
+        padding-right: 5px;
+        font-weight: normal;
+    }
+}
+.up{
+    text-transform: uppercase;
+}
+
+/* ---Buttons & forms ---*/
+
+.btn{
+    color: #fff;
+    background: $orange;
+    @include bd-radius(0);
+    border: none;
+    outline: none;
+    font-size: 1.227em;
+    padding: 6px 33px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    &:hover{
+        background: $orange + #070707;
+        color: #fff;
+    }
+    &:focus,
+    &:active,
+    &:focus:active{
+        background: $orange + #0c0c0c;
+        color: #fff;
+        @include box-shadow(none);
+        outline: none;
+    }
+}
+.form-control{
+    border: 2px solid #fff;
+    background: none;
+    @include bd-radius(0);
+    height: 48px;
+    line-height: 36px;
+    font-size: 24px;
+    color: #fff;
+    &:focus{
+        border-color: #fff;
+        @include box-shadow(none);
+        outline: none;
+    }
+}
+label{
+    font-weight: normal;
+}
+
+
+@media all and (max-width: $screen-xs-max){
+    h3{
+        margin-top: 1em;
+    }
+    .btn{
+        font-size: 1em;
+    }
+}
+
+/*------ Styles -------*/
+.header{
+    background: url("#{$files}header-bg.jpg") center 0 no-repeat;
+    @include bg_size(cover);
+    padding-top: 125px;
+    position: relative;
+    .header-content{
+        @include gradient-horizontal( #fff, rgba(255,255,255,0.4));
+        &.scroll-header{
+            .logo{
+                padding-top: 15px;
+                p{
+                    display: none;
+                }
+            }
+            .navbar-nav li{
+                padding: 3px 0;
+            }
+        }
+    }
+    .navbar {
+        border: none;
+        background: none;
+        font: 0.655em/1.2 'ubuntulight', arial, sans-serif;
+        margin-bottom: 0;
+    }
+    .logo{
+        padding-top: 50px;
+        width: 160px;
+        .navbar-brand{
+            font: 2em/120% 'ubuntuitalic', Arial, sans-serif;
+            color: $orange;
+            padding: 0;
+            background: url('#{$files}logo.png') 0 0 no-repeat;
+            @include bg_size(99% auto);
+            text-indent: -9000px;
+            overflow: hidden;
+            height: 27px;
+            width: 100%;
+            display: block;
+            margin-left: 0;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .navbar-collapse.collapse{
+        overflow-x: hidden!important;
+    }
+    .navbar-nav{             
+        li{
+            padding: 49px 0 5px;
+            float: none;
+            a{
+                padding: 15px 5px;
+                text-align: center;
+            }
+            &.order-link{
+                font: 1.250em/1.2 'ubuntumedium', arial, sans-serif;
+                background: $orange;
+                a{
+                    padding: 15px 38px;
+                    color: #fff;
+                    &:hover{
+                        color: #333;
+                    }
+                }                
+            }
+        }
+    }
+    h1{
+        max-width: 500px;
+        margin-bottom: 5px;
+        span{
+            background: #fff;
+            display: inline-block;
+            padding: 0 15px;
+            color: $orange;
+            margin-bottom: 7px;
+            line-height: 1.04;
+            margin-left: -20px;
+        }
+    }
+    .offer{
+        margin-left: -20px;
+        max-width: 325px;
+        font: 1em/1.45 "ubuntumedium", arial, sans-serif;
+        h2{
+            background: $orange;
+            color: #fff;
+            line-height: 1.74;
+            margin-top: 0;
+            margin-bottom: 12px;
+            display: inline-block;
+            padding: 0 17px;
+        }
+        p{
+            font-size: 0.727em;
+            padding: 4px 17px 8px 70px;
+            display: inline-block;
+            text-transform: none;
+        }
+    }
+    .countries-list{
+        position: absolute;
+        bottom: 20px;
+    }
+    .navbar-toggle{
+        margin: 13px 15px;
+        border: none;
+        @include bd-radius(0);
+        background: $orange;
+        &:hover{
+            background: $orange - #070707;
+        }
+        &:focus{
+            background: $orange - #0c0c0c;
+        }
+        .icon-bar{
+            background: #fff;
+        }
+    }
+    @media all and (min-width: $screen-sm-min){ 
+        .navbar-nav{
+            @include list-table(25%);
+            max-width: 625px;
+            padding-left: 30px; 
+            width: 100%; 
+            margin-right: 0;
+        }
+    } 
+    @media all and (max-width: $screen-xs-max){
+        text-align: center;
+        &>.container{
+            font-size: .8em;
+        }
+        .logo{
+            padding: 8px 15px;
+            width: 180px;
+            p{
+                font-size: 13px;
+            }
+        }
+        .navbar{
+            /* font-size: 0.8em; */
+             li{
+                padding: 0;
+                a:hover{
+                    background: $orange + #070707;
+                }
+                /* a:focus, */
+                a:active{
+                    background: $orange + #0c0c0c;
+                }
+                .order-link:hover a{
+                    color: #333;
+                }
+            }
+        }
+        h1{
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 2em;
+            span{
+                margin-left: 0;
+                padding: 0 10px;
+            }
+        }
+        .offer{
+            margin:  0 auto;
+        }
+        .countries-list{
+            margin-left: -120px;
+            left: 50%;
+        }
+    }
+}
+.offer{
+    font: 2.045em/1.45 "ubunturegular", arial, sans-serif;    
+    p{
+        background: $orange url("#{$files}offer.png") 6% center no-repeat;            
+        @include bg-size(14% auto);
+        padding: 4px 12% 8px 25%;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+.countries-list{
+    @include list-unstyled;
+    li{
+        display: inline-block;
+        margin-right: 8px;
+        overflow: hidden;
+        width: 75px;
+        height: 47px;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+
+main{
+    section{
+        margin: 0 0 50px;
+        padding: 50px 0 0;
+    }
+    .ps-container{
+        position: relative;
+        color: $grey;
+        .ps-header{
+            width: 100%;
+            h3{
+                margin: 60px 0;                
+            }
+        }
+        .ps-content{
+            padding: 0;
+            text-transform: none;
+            display: table;
+            .ps-description{
+                display: table-cell;
+                vertical-align: middle;
+                position: relative; 
+                &>div{
+                    position: relative;
+                    padding-right: 20%;
+                    padding-top: 15px;
+                    &:before{
+                        width: 123px;
+                        height: 4px;
+                        @include bd-radius(2px);
+                        background: $orange;
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                    }      
+                }
+                p{
+                    border: none;
+                    font-size: 1em;
+                    word-spacing: normal;
+                    letter-spacing: normal;
+                    padding: 0;
+                    text-align: left;
+                    overflow: hidden;
+                }         
+            }
+           
+        }
+        .ps-slidewrapper{
+            top: 150px;
+            bottom: 0;
+            height: auto;  
+            .ps-slides{
+                top: 0;
+                bottom: 65px;
+                &>div{
+                    @include bg_size(contain);
+                    background-position: center center; 
+                    &:after{
+                       width: 16px;
+                       height: 32px;
+                       left: 0;
+                       background: url("#{$files}arrow.png") 0 0 no-repeat;
+                       content: '';
+                       position: absolute;
+                       top: 50%;
+                       margin-top: -16px;
+                       z-index: 1000;
+                   }
+                }
+            }   
+            &> nav{
+                height: 65px;
+                a{
+                    &:after{
+                        height: 65px;
+                        width: 65px;
+                        margin-left: -33px;
+                    }
+                    &:first-child{
+                        @include box-shadow(inset 0 0 0 9995px rgba(224,126,39,.7));
+                        &:hover{
+                            @include box-shadow(inset 0 0 0 9995px rgba(224,126,39,.3));
+                        }
+                        &:after{
+                            margin-top: -55px;
+                        }
+                    } 
+                    &:last-child{
+                        @include box-shadow(inset 0 0 0 9995px rgba(128,128,128,.7));
+                        &:hover{
+                            @include box-shadow(inset 0 0 0 9995px rgba(128,128,128,.3));
+                        }
+                        &:after{
+                            margin-top: -10px;
+                        }
+                    }
+                }
+            }       
+        }        
+    }
+    @media (max-width: 860px){
+        padding-top: 40px;
+        .ps-container{
+            .ps-header h3{
+                margin: 20px 0;
+            }
+            .ps-contentwrapper{
+                bottom: 65px;
+                height: 255px;
+            }
+            .ps-slidewrapper{
+                top: 80px;
+                .ps-slides{
+                    bottom: 320px;
+                    &> div{
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .ps-content {
+                display: block;
+                .ps-description{
+                    display: block;
+                    height: 100%;
+                    overflow-y: auto;
+                    padding-top: 15px;
+                    &> div{
+                        padding-right: 0;
+                        .details{
+                            width: 49.5%;
+                            vertical-align: top;
+                            padding-right: 5px;
+                            display: inline-block;
+                        }
+                    }
+                    
+                } 
+            }
+        }
+        section{
+            padding-top: 20px;
+        }
+    }
+    .about-wrap{
+        font: 0.955em/1.2em 'ubuntulight_italic', arial, sans-serif;
+        p{
+            max-width: 730px;
+        }
+        .about{
+            font: 1.048em/1.2em 'ubunturegular', arial, sans-serif;
+            position: relative;            
+            .box{
+                background: $orange;
+                color: #fff;
+                padding: 17% 20px 20px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 25%;
+                &:nth-child(2){
+                    background: $grey;
+                    padding: 11% 20px 20px;
+                    margin-left: 25%;
+                    li{
+                       height: 60px;
+                    }
+                }       
+            }
+            .img-box{
+                margin-left: 50%;
+                width: 50%;
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+            .countries-list{
+                li{
+                    width: 30%;
+                    max-width: 75px;
+                    margin: 0;
+                }
+            }
+        }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+            .about{
+                font-size: .8em;
+                .box:nth-child(2){
+                    padding: 5% 20px 20px;
+                }
+            }
+
+        }
+        @media (max-width: $screen-xs-max){
+            .about{                
+                font-size: .8em;
+                .box{
+                    width: 50%;
+                    position: relative;
+                    float: left;
+                    height: 250px;
+                    &:nth-child(2){
+                        margin-left: 0;
+                        font-size: .85em;
+                        padding-top: 5%;
+                        li{
+                            height: 50px
+                        }
+                    }
+                }
+                .img-box{
+                    margin-left: 0;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .comments{
+        .comment-wrap{
+            margin-bottom: 2.9em;
+        }
+        .img-container{
+            @include img-container(125px, 150px);
+            margin-bottom: 1em;
+        }
+        .comment-header{
+            color: $grey;
+            font: 1.045em/1.2 "ubuntuitalic";
+            margin-bottom: 1.2em;
+            overflow: hidden;
+        }
+        .comment-content{
+            color: $orange;
+            padding-right: 15px;
+            border-right: 1px solid $grey;
+            overflow: hidden;
+        }
+        @media (max-width: $screen-sm-max){
+            .comment-content{
+                clear: both;
+            }
+        }
+    }
+    .offer{
+        margin-bottom: 50px;
+        p{
+            position: relative;
+            min-height: 110px;
+            &:after{
+                content: '';
+                position: absolute;
+                bottom: -16px;
+                left: 25%;
+                margin-left: -15px;
+                width: 30px;
+                height: 16px;
+                background: url("#{$files}arrow-down.png") 0 0 no-repeat;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+            font-size: 1.5em;
+        }
+        @media (max-width: $screen-xs-max){
+            font-size: .9em;
+        }
+    }
+    .order{
+        form{
+            background: $grey;
+            color: #fff;
+            padding: 0 7% 35px;
+            overflow: hidden;
+            & + .col-sm-6{
+                position: relative;
+                color: $orange;
+                font-size: 1.636em;
+                line-height: 1;
+                padding: 100px 5%;
+                .up{
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    left: -16px;
+                    top: 50%;
+                    margin-top: -16px;
+                    background: url("#{$files}arrow-left.png") 0 0 no-repeat;
+                    width: 16px;
+                    height: 32px;
+                }            
+            }
+            h3{
+                color: #fff;
+            }
+            label{
+                color: #d2d2d2;
+                font: 0.727em/1.2em "ubuntuitalic", arial sans-serif;
+            }
+        }
+        @media (max-width: $screen-xs-max){
+            form + .col-sm-6{
+                font-size: 1em;
+                text-align: center;
+                padding: 50px 5%;
+            }
+        }
+    }
+
+    .contacts{
+        background: $grey;
+        .col-sm-6:first-child{
+            padding: 0;
+            img{
+                width: 100%;
+            }
+            &+ .col-sm-6{
+                color: #fff;
+                padding: 0 5%;
+                h3{
+                    color: #fff;
+                }
+                p span{
+                    display: block;
+                }
+            }
+        }
+        &:after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+            h3{
+                margin-top: .9em;
+                margin-bottom: .9em;
+            }
+            .col-sm-6:nth-child(2){
+                font-size: .9em;
+                line-height: 1.2;
+                
+            }
+        }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+            h3{
+                margin-top: .9em;
+                margin-bottom: .9em;
+            }
+            .col-sm-6:nth-child(2){
+                font-size: .7em;
+                line-height: 1.2;
+                p{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+.footer{
+    background: $grey;
+    .container{
+        color: #fff;
+        p{
+            background: $orange;
+            margin: 0;
+            padding: .5em 20px;
+            font: 2.045em/1.2em 'ubuntuitalic', arial, sans-serif;
+        }
+    }
+     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+        p{font-size: 1.5em;}
+     }
+    @media (max-width: $screen-xs-max){
+        p{font-size: 1.4em;}
+    }
+}

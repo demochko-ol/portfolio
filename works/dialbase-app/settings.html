@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dialbase - Settings</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,300,300italic,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="settings">
+<div class="wrapper">
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="logo"><a href="index.html">Dialbase</a></div>
+            <div class="nav-right">
+                <a class="link-person" href="#"><img src="images/temporary/person-img-ini.png" alt="Ini Edwards"></a>
+            </div>
+        </header>
+        <div class="container-wrapper">
+            <div class="container">
+                <form action="#">
+                    <h1>Campaign Settings: <span>Experian data</span></h1>
+                    <div class="wrap-table">
+                        <div class="b-table">
+                            <div class="b-cell b-team">
+                                <div class="wrap-title">
+                                    <div class="m-fr">
+                                        <a href="#" class="e-btn m-cta m-icon"><i class="material-icons">add</i>Add</a>
+                                    </div>
+                                    <h3>
+                                        Campaign team
+                                        <span class="e-tooltip" data-toggle="tooltip" data-placement="bottom" title="Manage who has access to this campaign. Only those added can access the campaign and make calls.">?</span>
+                                    </h3>
+                                </div>
+                                <ul class="list-elements">
+                                    <li>
+                                        <div class="m-fr">
+                                            <a class="e-btn-icon red-icon" href="#"><i class="material-icons">clear</i></a>
+                                        </div>
+                                        <img src="images/temporary/person-img.png" alt="Chris Pattison">
+                                        Chris Pattison
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <a class="e-btn-icon red-icon" href="#"><i class="material-icons">clear</i></a>
+                                        </div>
+                                        <img src="images/temporary/person-img-ini.png" alt="Ini Edwards">
+                                        Ini Edwards
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <a class="e-btn-icon red-icon" href="#"><i class="material-icons">clear</i></a>
+                                        </div>
+                                        <img src="images/temporary/person-img-olga.png" alt="Olga">
+                                        Ольга Швидкая
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <a class="e-btn-icon red-icon" href="#"><i class="material-icons">clear</i></a>
+                                        </div>
+                                        <img src="images/temporary/person-img-alexander.png" alt="Alexander Davydov">
+                                        Alexander Davydov
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="b-cell b-data">
+                                <div class="wrap-title">
+                                    <div class="m-fr">
+                                        <div class="input-file-group">
+                                            <span class="btn-file m-cta m-icon">
+                                                <i class="material-icons">cloud_upload</i>Upload file <input type="file">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <h3>
+                                        Campaign Data Files
+                                        <span class="e-tooltip" data-toggle="tooltip" data-placement="bottom" title="<p>Upload, export and delete data associated with your campaign.</p><p>You can set the rotation status to temporarily ‘pause’ data batches so that they are not included in the current call rotation/queue.</p>">?</span>
+                                    </h3>
+                                </div>
+                                <ul class="list-elements">
+                                    <li class="title-list">
+                                        <div class="m-fl">File name</div>
+                                        <div class="m-fr">Rotation status</div>
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <label for="toggle" class="toggle"><span>Paused</span> <input id="toggle" type="checkbox" name="toggle" checked></label>
+                                        </div>
+                                        <input type="checkbox" id="checkbox1" name="checkbox1"><label for="checkbox1">Accoutants.xlsx</label>
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <label for="toggle2" class="toggle"><span>Paused</span> <input id="toggle2" type="checkbox" name="toggle2"></label>
+                                        </div>
+                                        <input type="checkbox" id="checkbox2" name="checkbox1"><label for="checkbox2">Accoutants_Wales.xlsx</label>
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <label for="toggle3" class="toggle"><span>Paused</span> <input id="toggle3" type="checkbox" name="toggle3"></label>
+                                        </div>
+                                        <input type="checkbox" id="checkbox3" name="checkbox1" checked><label for="checkbox3">Large_AccoutancyFirms.csv</label>
+                                    </li>
+                                    <li>
+                                        <div class="m-fr">
+                                            <label for="toggle4" class="toggle"><span>Paused</span> <input id="toggle4" type="checkbox" name="toggle4"></label>
+                                        </div>
+                                        <input type="checkbox" id="checkbox4" name="checkbox1"><label for="checkbox4">Accoutants_Scotland.xlsx</label>
+                                    </li>
+                                </ul>
+                                <div class="wrap-btn m-clearfix">
+                                    <a href="#" class="e-btn m-icon"><i class="material-icons">cloud_done</i>Export data</a>
+                                    <a href="#" class="e-btn m-tertiary">Delete file</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Custom data inputs -->
+                    <section class="section">
+                        <div class="wrap-title">
+                            <h3>
+                                Custom data inputs
+                                <span class="e-tooltip" data-toggle="tooltip" data-placement="bottom" title="Create custom data outcomes that your team can use when on calls. This will get added as columns and records in the data batches included in this campaign.">?</span>
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="wrap-custom-data">
+                                    <h3>Create custom data inputs</h3>
+                                    <div class="custom-data">
+                                        <div class="m-clearfix">
+                                            <div class="wrap-item m-fl">
+                                                <label for="input-item-1">Input label</label>
+                                                <input id="input-item-1" type="text" value="Date of birth">
+                                            </div>
+                                            <div class="wrap-item m-fl">
+                                                <label for="sel-1">Input type</label>
+                                                <select id="sel-1" class="selectpicker" name="Date picker">
+                                                    <option value="Date picker" selected>Date picker</option>
+                                                    <option value="Free text">Free text</option>
+                                                    <option value="Numeric">Numeric</option>
+                                                </select>
+                                            </div>
+                                            <div class="m-fr">
+                                                <a href="#" class="e-btn-icon red-icon"><i class="material-icons">clear</i></a>
+                                            </div>
+                                        </div>
+                                        <div class="m-clearfix">
+                                            <div class="wrap-item m-fl">
+                                                <label for="input-item-2">Input label</label>
+                                                <input id="input-item-2" type="text" value="Mother's maiden name">
+                                            </div>
+                                            <div class="wrap-item m-fl">
+                                                <label for="sel-2">Input type</label>
+                                                <select id="sel-2" class="selectpicker" name="Date picker">
+                                                    <option value="Date picker">Date picker</option>
+                                                    <option value="Free text" selected>Free text</option>
+                                                    <option value="Numeric">Numeric</option>
+                                                </select>
+                                            </div>
+                                            <div class="m-fr">
+                                                <a href="#" class="e-btn-icon red-icon"><i class="material-icons">clear</i></a>
+                                            </div>
+                                        </div>
+                                        <div class="m-clearfix">
+                                            <div class="wrap-item m-fl">
+                                                <label for="input-item-3">Input label</label>
+                                                <input id="input-item-3" type="text" placeholder="e.g. Phone number">
+                                            </div>
+                                            <div class="wrap-item m-fl">
+                                                <label for="sel-3">Input type</label>
+                                                <select id="sel-3" class="selectpicker" name="Date picker">
+                                                    <option value="Date picker">Date picker</option>
+                                                    <option value="Free text">Free text</option>
+                                                    <option value="Numeric" selected>Numeric</option>
+                                                </select>
+                                            </div>
+                                            <div class="m-fr">
+                                                <a href="#" class="e-btn-icon red-icon"><i class="material-icons">clear</i></a>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="e-btn m-cta m-icon"><i class="material-icons">add</i>Add</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Preview</h3>
+                                <div class="campaign-entries preview">
+                                    <div class="wrap-item wrap-datepicker">
+                                        <label for="dateBirth">Date of birth</label>
+                                        <input id="dateBirth" type="text" placeholder="01/02/2015">
+                                        <a href="#" class="e-btn m-secondary btn-datepicker"><img src="images/datepicker.svg" alt="datepicker"></a>
+                                    </div>
+                                    <div class="wrap-item">
+                                        <label for="cardName">Mother's maiden name</label>
+                                        <input id="cardName" type="text">
+                                    </div>
+                                    <div class="wrap-item">
+                                        <label for="accountNumber">e.g. Phone number</label>
+                                        <input id="accountNumber" type="number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End custom data inputs -->
+
+                    <!-- Outcomes -->
+                    <section class="section outcome">
+                        <div class="wrap-title">
+                            <h3>
+                                Outcomes
+                                <span class="e-tooltip" data-toggle="tooltip" data-placement="bottom" title="Create call outcomes to help you manage how your data batches are being processed e.g. Create an outcome called ‘Sale’ that, when selected, removes that record from rotation.">?</span>
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h3>Create new outcome</h3>
+                                <div class="new-outcome">
+                                    <div class="wrap-item">
+                                        <label for="outcome">Outcome label</label>
+                                        <input id="outcome" type="text" placeholder="e.g. Sale">
+                                    </div>
+                                    <div class="wrap-item">
+                                        <h3>Requires data entry or updates</h3>
+                                        <ul class="wrap-inline-block">
+                                            <li><input type="radio" id="radio1" name="radio1" checked><label for="radio1">Yes</label></li>
+                                            <li><input type="radio" id="radio2" name="radio1"><label for="radio2">No</label></li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrap-item">
+                                        <h3>Removes from rotation</h3>
+                                        <div class="m-clearfix">
+                                            <ul class="wrap-inline-block">
+                                                <li><input type="radio" id="radio3" name="radio2" checked><label for="radio3">Yes</label></li>
+                                                <li><input type="radio" id="radio4" name="radio2"><label for="radio4">No</label></li>
+                                            </ul>
+                                            <a href="#" class="e-btn m-cta m-icon"><i class="material-icons">add</i>Add</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h3>Current outcomes</h3>
+                                <table class="table-list data-outcomes">
+                                    <tr>
+                                        <th style="width: 30%">
+                                            Outcome label
+                                        </th>
+                                        <th style="width: 25%">
+                                            Removes from rotation
+                                        </th>
+                                        <th style="width: 25%">
+                                            Requires data entry
+                                        </th>
+                                        <th style="width: 15%">
+                                            Usage count
+                                        </th>
+                                        <th style="width: 5%">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="wrap-editable">
+                                                <span class="editable-text">
+                                                    <span>Sale</span>
+                                                </span>
+                                                <div class="wrap-item wrap-input-editable">
+                                                    <input type="text">
+                                                </div>
+                                                <a class="e-btn-icon e-edit" title="Edit" href="#"><i class="material-icons">edit</i></a>
+                                                <a class="e-btn-icon e-save" title="Save" href="#"><i class="material-icons">save</i></a>
+                                            </div>
+                                        </td>
+                                        <td class="check active">
+                                            <i></i>
+                                        </td>
+                                        <td class="check active">
+                                            <i></i>
+                                        </td>
+                                        <td>12</td>
+                                        <td>
+                                            <ul class="list-buttons m-fr">
+                                                <li><a href="#" class="e-btn-icon red-icon"><i class="material-icons">close</i></a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>                                            
+                                            <div class="wrap-editable">
+                                                <span class="editable-text">
+                                                    <span>Not Interested</span>
+                                                </span>
+                                                <div class="wrap-item wrap-input-editable">
+                                                    <input type="text">
+                                                </div>
+                                                <a class="e-btn-icon e-edit" title="Edit" href="#"><i class="material-icons">edit</i></a>
+                                                <a class="e-btn-icon e-save" title="Save" href="#"><i class="material-icons">save</i></a>
+                                            </div>
+                                        </td>
+                                        <td class="check">
+                                            <i></i>
+                                        </td>
+                                        <td class="check">
+                                            <i></i>
+                                        </td>
+                                        <td>57</td>
+                                        <td>
+                                            <ul class="list-buttons m-fr">
+                                                <li><a href="#" class="e-btn-icon red-icon"><i class="material-icons">close</i></a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="wrap-editable">
+                                                <span class="editable-text">
+                                                    <span>Call back request</span>
+                                                </span>
+                                                <div class="wrap-item wrap-input-editable">
+                                                    <input type="text">
+                                                </div>
+                                                <a class="e-btn-icon e-edit" title="Edit" href="#"><i class="material-icons">edit</i></a>
+                                                <a class="e-btn-icon e-save" title="Save" href="#"><i class="material-icons">save</i></a>
+                                            </div>
+                                        </td>
+                                        <td class="check">
+                                            <i></i>
+                                        </td>
+                                        <td class="check active">
+                                            <i></i>
+                                        </td>
+                                        <td>2</td>
+                                        <td>
+                                            <ul class="list-buttons m-fr">
+                                                <li><a href="#" class="e-btn-icon red-icon"><i class="material-icons">close</i></a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="wrap-editable">
+                                                <span class="editable-text">
+                                                    <span>Contact info given</span>
+                                                </span>
+                                                <div class="wrap-item wrap-input-editable">
+                                                    <input type="text">
+                                                </div>
+                                                <a class="e-btn-icon e-edit" title="Edit" href="#"><i class="material-icons">edit</i></a>
+                                                <a class="e-btn-icon e-save" title="Save" href="#"><i class="material-icons">save</i></a>
+                                            </div>
+                                        </td>
+                                        <td class="check">
+                                            <i></i>
+                                        </td>
+                                        <td  class="check active">
+                                            <i></i>
+                                        </td>
+                                        <td>0</td>
+                                        <td>
+                                            <ul class="list-buttons m-fr">
+                                                <li><a href="#" class="e-btn-icon red-icon"><i class="material-icons">close</i></a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End outcomes -->
+                    <!-- Prompt edit -->
+                    <section class="section prompt-edit">
+                        <div class="wrap-title">
+                            <h3>
+                                Script / Prompt
+                                <span class="e-tooltip" data-toggle="tooltip" data-placement="bottom" title="You can add a script or some helpful information that users can view when making calls.">?</span>
+                            </h3>
+                        </div>
+                        <div class="editor">
+                            <a title="Format clear" class="e-btn-icon m-format-clear" href="#"><i class="material-icons">format_clear</i></a>
+                            <textarea>
+                            <p>Hi!</p>
+                            <p>I'm calling from Dialbase, we're an online service that offers simple no contract callcenter solutions using VOIP technology.</p>
+                            <p>Can I talk to whoever deals with your telecom needs?</p>
+                        </textarea>
+                        </div>
+                    </section>
+                    <!-- End prompt edit -->
+                    <!-- Call recording -->
+                    <section class="section call-recording">
+                        <div class="wrap-title">
+                            <div class="m-fr">
+                                <label for="toggleRecording" class="toggle toggle-lg">
+                                    <span class="on">On</span>
+                                    <input id="toggleRecording" type="checkbox" name="toggle" checked>
+                                    <span class="off">Off</span>
+                                </label>
+                            </div>
+                            <h3>
+                                Call recording
+                                <span class="e-tooltip" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<p>When switch on call recording stores recordings of all calls made during the campaign.</p><p>You can also export, delete and play records back when necessary.</p>">?</span>
+                            </h3>
+                        </div>
+                        <div class="wrap-scroll-x">
+                            <table class="table-list data-recording">
+                                <tr>
+                                    <th style="width: 16%">File name</th>
+                                    <th style="width: 21%">Data batch</th>
+                                    <th style="width: 15%">Team member</th>
+                                    <th>Date created</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="checkbox20" name="recording" checked><label for="checkbox20">001234.mp3</label></td>
+                                    <td>Accountants.xlsx</td>
+                                    <td>Ini Edwards</td>
+                                    <td>23/11/2015</td>
+                                    <td>
+                                        <div class="m-clearfix">
+                                            <ul class="list-buttons">
+                                                <li><a title="previous" class="e-btn-img m-btn-prev" href="#">prev</a></li>
+                                                <li><a title="play" class="e-btn-img m-btn-play active" href="#">play</a></li>
+                                                <li><a title="next" class="e-btn-img m-btn-next" href="#">next</a></li>
+                                            </ul>
+                                            <ul class="list-buttons">
+                                                <li><a title="pause" class="e-btn-img m-btn-pause" href="#">pause</a></li>
+                                                <li><a title="stop" class="e-btn-img m-btn-stop" href="#">stop</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="checkbox21" name="recording"><label for="checkbox21">001233.mp3</label></td>
+                                    <td>Accountants_Scotland.xlsx</td>
+                                    <td>Ini Edwards</td>
+                                    <td>23/11/2015</td>
+                                    <td>
+                                        <div class="m-clearfix">
+                                            <ul class="list-buttons">
+                                                <li><a title="previous" class="e-btn-img m-btn-prev" href="#">prev</a></li>
+                                                <li><a title="play" class="e-btn-img m-btn-play active" href="#">play</a></li>
+                                                <li><a title="next" class="e-btn-img m-btn-next" href="#">next</a></li>
+                                            </ul>
+                                            <ul class="list-buttons">
+                                                <li><a title="pause" class="e-btn-img m-btn-pause" href="#">pause</a></li>
+                                                <li><a title="stop" class="e-btn-img m-btn-stop" href="#">stop</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="checkbox22" name="recording"><label for="checkbox22">001232.mp3</label></td>
+                                    <td>Accountants_Scotland.xlsx</td>
+                                    <td>Ini Edwards</td>
+                                    <td>23/11/2015</td>
+                                    <td>
+                                        <div class="m-clearfix">
+                                            <ul class="list-buttons">
+                                                <li><a title="previous" class="e-btn-img m-btn-prev" href="#">prev</a></li>
+                                                <li><a title="play" class="e-btn-img m-btn-play active" href="#">play</a></li>
+                                                <li><a title="next" class="e-btn-img m-btn-next" href="#">next</a></li>
+                                            </ul>
+                                            <ul class="list-buttons">
+                                                <li><a title="pause" class="e-btn-img m-btn-pause" href="#">pause</a></li>
+                                                <li><a title="stop" class="e-btn-img m-btn-stop" href="#">stop</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="checkbox23" name="recording"><label for="checkbox23">001231.mp3</label></td>
+                                    <td>Accountants_Scotland.xlsx</td>
+                                    <td>Ini Edwards</td>
+                                    <td>23/11/2015</td>
+                                    <td>
+                                        <div class="m-clearfix">
+                                            <ul class="list-buttons">
+                                                <li><a title="previous" class="e-btn-img m-btn-prev" href="#">prev</a></li>
+                                                <li><a title="play" class="e-btn-img m-btn-play active" href="#">play</a></li>
+                                                <li><a title="next" class="e-btn-img m-btn-next" href="#">next</a></li>
+                                            </ul>
+                                            <ul class="list-buttons">
+                                                <li><a title="pause" class="e-btn-img m-btn-pause" href="#">pause</a></li>
+                                                <li><a title="stop" class="e-btn-img m-btn-stop" href="#">stop</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" id="checkbox24" name="recording"><label for="checkbox24">001230.mp3</label></td>
+                                    <td>Accountants_Scotland.xlsx</td>
+                                    <td>Ini Edwards</td>
+                                    <td>23/11/2015</td>
+                                    <td>
+                                        <div class="m-clearfix">
+                                            <ul class="list-buttons">
+                                                <li><a title="previous" class="e-btn-img m-btn-prev" href="#">prev</a></li>
+                                                <li><a title="play" class="e-btn-img m-btn-play active" href="#">play</a></li>
+                                                <li><a title="next" class="e-btn-img m-btn-next" href="#">next</a></li>
+                                            </ul>
+                                            <ul class="list-buttons">
+                                                <li><a title="pause" class="e-btn-img m-btn-pause" href="#">pause</a></li>
+                                                <li><a title="stop" class="e-btn-img m-btn-stop" href="#">stop</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="wrap-btn m-clearfix">
+                            <a href="#" class="e-btn m-icon"><i class="material-icons">cloud_done</i>Export</a>
+                            <a href="#" class="e-btn m-tertiary">Delete file(s)</a>
+                        </div>
+                    </section>
+                    <!-- End call recording -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="inner-wrapper-footer"><div class="copyright">&copy; 2015. All rights reserved.</div></div>
+    </footer>
+    <ul class="fix-position">
+        <li><a href="#" class="btn-fix-pos btn-dialing" data-toggle="modal" data-target="#dialing"><img src="images/icon-dialing.svg" alt="Dialing"></a></li>
+        <li><a href="#" class="btn-fix-pos btn-message" data-toggle="modal" data-target="#message"><img src="images/light-bulb.svg" alt="message"></a></li>
+    </ul>
+
+    <!-- Modals -->
+    <div id="data-fields" class="modal fade big-wrap-modal">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="b-data b-data-organise">
+                <div class="wrap-title">
+                    <div class="m-fr">
+                        <a class="e-btn-icon red-icon" href="#" data-dismiss="modal"><i class="material-icons">clear</i></a>
+                    </div>
+                    <h3>
+                        Organise data fields <span></span>
+                    </h3>
+                </div>
+                <ul class="list-elements">
+                    <li class="title-list">
+                        <div class="m-fl">
+                            <span>Use</span>
+                            Data heading
+                        </div>
+                        <div class="m-fr">Reorder</div>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox5" name="checkbox5" checked><label for="checkbox5">Home number</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox6" name="checkbox6" checked><label for="checkbox6">Mobile number</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox7" name="checkbox7" checked><label for="checkbox7">House/Flat number</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox8" name="checkbox8"><label for="checkbox8">Address Line 2</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox9" name="checkbox9"><label for="checkbox9">Address Line 3</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox10" name="checkbox10"><label for="checkbox10">County</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox11" name="checkbox11" checked><label for="checkbox11">Postcode</label>
+                    </li>
+                    <li>
+                        <div class="m-fr">
+                            <a class="m-reorder" href="#">Reorder</a>
+                        </div>
+                        <input type="checkbox" id="checkbox12" name="checkbox12"><label for="checkbox12">Country</label>
+                    </li>
+                </ul>
+                <div class="wrap-btn m-clearfix">
+                    <a href="#" class="e-btn m-cta m-icon"><i class="material-icons">check</i>Complete upload</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="message" class="modal fade bottom-position">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="message">
+                <div class="inner-wrap-message">
+                    <a class="e-btn-icon red-icon" href="#" data-dismiss="modal"><i class="material-icons">clear</i></a>
+                    <h3 class="title-message"><img src="images/light-bulb.svg" alt="message"> Feedback & Odeas</h3>
+                    <form action="#">
+                        <div class="wrap-item">
+                            <textarea name="messageText" id="messageText" placeholder="Type feedback and ideas about how we could improve Dialbase here..."></textarea>
+                        </div>
+                        <div class="b-ta-center">
+                            <button class="e-btn m-cta m-bg-grey" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="dialing" class="modal fade bottom-position" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="dialing">
+                <div class="inner-wrap-dialing">
+                    <form action="#">
+                        <div class="wrap-input">
+                            <button class="e-btn-icon clear-dialing-input" type="button"><i class="material-icons">backspace</i></button>
+                            <input class="dialing-input" id="dialing-input" name="dialing-input" type="text">
+                        </div>
+                        <table class="numerical-keyboard">
+                            <tr>
+                                <td><button type="button" value="1">1</button></td>
+                                <td><button type="button" value="2">2</button></td>
+                                <td><button type="button" value="3">3</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="4">4</button></td>
+                                <td><button type="button" value="5">5</button></td>
+                                <td><button type="button" value="6">6</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="7">7</button></td>
+                                <td><button type="button" value="8">8</button></td>
+                                <td><button type="button" value="9">9</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" value="*">*</button></td>
+                                <td><button type="button" value="0">0</button></td>
+                                <td><button type="button" value="#">#</button></td>
+                            </tr>
+                        </table>
+                        <button class="e-btn m-cta m-big" type="submit"><i class="material-icons">call</i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/lib/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/bootstrap-select.js"></script>
+<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

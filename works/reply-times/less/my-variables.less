@@ -1,0 +1,30 @@
+@my_files: 						"../images/";
+
+
+@brand-warning:         		#ffd200;
+
+@italic:						'cintalight_italic';
+
+@prompt_bg:						url("@{my_files}/prompt_bg.png");
+
+
+@container-tablet:             ((700px + @grid-gutter-width));
+
+@container-desktop:            ((960px + @grid-gutter-width));
+
+@container-large-desktop:      ((960px + @grid-gutter-width));
+
+
+.list-inline(){
+  .list-unstyled;
+  > li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.bd-radius(@radius) {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius;
+}

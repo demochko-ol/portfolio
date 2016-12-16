@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Awesomex</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="header">
+        <!-- Static navbar -->
+        <nav class="navbar">
+            <div class="header-wrap">
+                <div class="container-fluid">
+                    <div class="navbar-header">                    
+                        <a href="#" class="navbar-brand">Awesomex</a>
+                    </div>
+                    <!-- <div class="" id="navbar"> -->
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">TOP LISTS</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="input-group search">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </span>
+                            </div><!-- /input-group -->
+
+                            <button type="button" class="btn login" data-toggle="modal" data-target="#login-modal">
+                                Log in
+                            </button>
+                            <!-- <button class="btn-create"></button> -->
+                        </form>
+                    <!--</div>/.nav-collapse -->
+                </div><!--/.container-fluid -->                
+            </div>
+        </nav>
+    </header>
+<div class="wrapper">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-inner">
+            <div class="profile">
+                <div class="img-wrap">
+                    <a href="#" class="inner">
+                        <img src="images/avatar.jpg" alt="">
+                    </a>
+                </div>
+                <div class="name">
+                    <h4><a href="#">Katie Caramel</a></h4>
+                </div>
+            </div> 
+            <div class="sidebar-content tags_container">
+                <a href="#" class="tag">css</a>
+                <a href="#" class="tag">movies</a>
+                <a href="#" class="tag btn-success">travel</a>
+                <a href="#" class="tag">awesomex</a>
+            </div>    
+            <hr>
+            <div class="sidebar-content">
+                <button class="btn btn-danger"><i class="create-icon"></i>Create new list</button>
+            </div>              
+        </div>
+        <div class="menu">
+            <button class="sidebar-toggle" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="menu-items">
+                <li><a href="#" class="followed"><span class="badge">2</span></a></li>
+                <li><a href="#" class="faved" data-toggle="tooltip" data-placement="right" data-original-title="My Collections"></a></li>
+                <li><a href="#" class="lists"></a></li>
+                <li><a href="#" class="settings"></a></li>
+            </ul>
+        </div>      
+    </aside>
+    <main class="main-content">        
+        <div class="content">
+            <!-- <button class="btn-create"></button> -->
+            
+            <div class="img-container">
+                <img src="images/banner.jpg" alt="">
+            </div>
+            <div class="container-fluid">
+                <div class="filter  clearfix">
+                    <select name="views" id="views">
+                        <option value="Most Views">Most Views</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                    <h6>YOUR OWN FEED</h6>
+                </div>
+                <article class="clearfix">
+                    <div class="article-img">
+                        <div class="inner">
+                            <img src="images/article1.jpg" alt="">
+                        </div>   
+                        <span class="label label-default"><i class="attach"></i>12</span>                     
+                    </div>
+                    <div class="article-desc">                    
+                        <header>                    
+                            <h3><a href="#">10 Most powerful militaries in the world</a><span class="time">2 hour ago</span></h3>                            
+                        </header>
+                        <div class="description">
+                            <p>We are examined the defence forces of 68 countries in order to compile the rankings</p>
+                        </div>
+                        <footer class="clearfix">
+                            <div class="like-btns">
+                                <a href="#" class="like">35<i></i></a>
+                                <a href="#" class="share">155<i></i></a>
+                            </div>                
+                            <div class="tags_container">
+                                <a href="#" class="tag btn-default">css</a>
+                                <a href="#" class="tag btn-default">movies</a>
+                                <a href="#" class="tag btn-success">travel</a>
+                                <a href="#" class="tag btn-default">awesomex</a>
+                            </div> 
+                        </footer>
+                    </div>
+                </article>
+                <hr>
+                <article class="clearfix">
+                    <div class="article-img">
+                        <div class="inner">
+                            <img src="images/article2.jpg" alt="">
+                        </div>                      
+                        <span class="label label-default"><i class="attach"></i>12</span>  
+                    </div>
+                    <div class="article-desc">                    
+                        <header>                    
+                            <h3><a href="#">Timeline Allied forces broke the Axis line</a><span class="time">2 hour ago</span></h3>
+                            
+                        </header>
+                        <div class="description">
+                            <p>We are examined the defence forces of 68 countries in order to compile the rankings</p>
+                        </div>
+                        <footer class="clearfix">
+                            <div class="like-btns">
+                                <a href="#" class="like">35<i></i></a>
+                                <a href="#" class="share">155<i></i></a>
+                            </div>                
+                            <div class="tags_container">
+                                <a href="#" class="tag btn-default">css</a>
+                                <a href="#" class="tag btn-default">movies</a>
+                                <a href="#" class="tag btn-default">awesomex</a>
+                            </div> 
+                        </footer>
+                    </div>
+                </article>
+                <hr>
+                <article class="clearfix">
+                    <div class="article-img">
+                        <div class="inner">
+                            <img src="images/article1.jpg" alt="">
+                        </div>                        
+                        <span class="label label-default"><i class="attach"></i>12</span>
+                    </div>
+                    <div class="article-desc">                    
+                        <header>                    
+                            <h3><a href="#">10 Most powerful militaries in the world</a><span class="time">2 hour ago</span></h3>                            
+                        </header>
+                        <div class="description">
+                            <p>We are examined the defence forces of 68 countries in order to compile the rankings</p>
+                        </div>
+                        <footer class="clearfix">
+                            <div class="like-btns">
+                                <a href="#" class="like">35<i></i></a>
+                                <a href="#" class="share">155<i></i></a>
+                            </div>                
+                            <div class="tags_container">
+                                <a href="#" class="tag btn-danger">awesomex</a>
+                            </div> 
+                        </footer>
+                    </div>
+                </article>
+                <hr>
+                <a href="#" class="btn show"><i></i>Show more</a>
+            </div>
+        </div>
+    </main>
+    <div class="comments-container">
+        <div class="comments-content">
+        <div class="top">
+            <div class="filter clearfix">
+                <select name="related" id="related">
+                    <option value="Related">Related</option>
+                    <option value="1">1</option>
+                    <option value="2">1</option>
+                </select>
+                <h6>DISCUSSION</h6>
+            </div>
+            <div class="media"> 
+                <div class="media-left"> 
+                    <div class="img-wrap">
+                        <a href="#" class="inner"> 
+                            <img alt="36x36" data-src="holder.js/36x36" class="media-object" style="width: 36px; height: 36px;" src="images/user.png" data-holder-rendered="true"> 
+                        </a> 
+                    </div>
+                </div> 
+                <div class="media-body"> 
+                    <textarea name="discussion" id="discussion" cols="15" rows="2" placeholder="Write something"></textarea>
+                </div> 
+            </div>
+        </div>
+        <div class="media-wrap">
+            <div class="media"> 
+                <div class="media-left">                        
+                    <div class="img-wrap">
+                        <a href="#" class="inner"> 
+                            <img alt="36x36" data-src="holder.js/36x36" class="media-object" style="width: 36px; height: 36px;" src="images/user.png" data-holder-rendered="true"> 
+                        </a> 
+                    </div>
+                </div> 
+                <header>
+                    <h4 class="media-heading"><a href="#">Michael Scott</a> <span class="time">12 HOURS AGO</span></h4>
+                </header>
+                <div class="media-body">                      
+                    <p>Directed by Francis Ford Coppola with a cast including Brando, Sheen, Duvall and Hopper; it’s an epic ﬁlm encapsulating the madness of the Vietnam war.</p>
+                    <p>The visuals are stunning, the acting superb and the production was as epic, chaotic and mad behind the camera as on it with no script, drink, drugs, ﬁre, re-casts, tigers, bankruptcy, heart attacks and grave robbery (seriously).</p>
+                    <p>I ﬁrst watched it after studying the <a href="#">Joseph Conrad book</a> Heart of Darkness (on which the ﬁlm is loosely based) and wrote an essay in my English Literature exam entirely using the ﬁlm as my reference. I still managed to scrape a pass, but have never completed the book</p>
+                    <footer class="clearfix">
+                        <button class="btn btn-default btn-reply"><i></i>Reply</button>
+                        <a href="#" class="btn-like btn-blue"><span>214</span></a>
+                        <button class="btn btn-default btn-share">Share</button>
+                    </footer>
+                </div> 
+            </div>
+            <div class="media"> 
+                <div class="media-left">                         
+                    <div class="img-wrap">
+                        <a href="#" class="inner"> 
+                            <img alt="36x36" data-src="holder.js/36x36" class="media-object" style="width: 36px; height: 36px;" src="images/user2.png" data-holder-rendered="true"> 
+                        </a> 
+                    </div>
+                </div> 
+                <header>
+                    <h4 class="media-heading"><a href="#">Saul Goodman</a> <span class="time">12 HOURS AGO</span></h4> 
+                </header>
+                <div class="media-body">                         
+                    <p>With a cast including it’s an epic ﬁlm encapsulating the madness of the Vietnam war.  The visuals are stunning, the acting superb and the production.</p>
+                    <p>Was as epic, chaotic and mad behind the camera as in my English Literature exam entirely using the ﬁlm as my reference. I still managed to scrape a pass, but have never completed the book</p>
+                    <footer class="clearfix">
+                        <button class="btn btn-default btn-reply"><i></i>Reply</button>
+                        <a href="#" class="btn-like btn-white"><span>214</span></a>
+                        <button class="btn btn-default btn-share">Share</button>
+                    </footer>
+                </div> 
+            </div>
+            <div class="media"> 
+                <div class="media-left">                        
+                    <div class="img-wrap">
+                        <a href="#" class="inner"> 
+                            <img alt="36x36" data-src="holder.js/36x36" class="media-object" style="width: 36px; height: 36px;" src="images/user2.png" data-holder-rendered="true"> 
+                        </a> 
+                    </div>
+                </div> 
+                <header>
+                    <h4 class="media-heading"><a href="#">Saul Goodman</a> <span class="time">12 HOURS AGO</span></h4>                        
+                </header>
+                <div class="media-body">  
+                    <p>With a cast including it’s an epic ﬁlm encapsulating the madness of the Vietnam war.  The visuals are stunning, the acting superb and the production.</p>
+                    <p>Was as epic, chaotic and mad behind the camera as in my English Literature exam entirely using the ﬁlm as my reference. I still managed to scrape a pass, but have never completed the book</p>
+                    <footer class="clearfix">
+                        <button class="btn btn-default btn-reply"><i class="reply-icon"></i>Reply</button>
+                        <button class="btn btn-default btn-share">Share</button>
+                    </footer>
+                </div> 
+            </div>                
+        </div>
+        </div>
+    </div>
+    <div class="comments-bg"></div>
+</div>
+<footer>
+    <div class="container">
+        
+    </div>
+</footer>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="left-container">                    
+                <a href="#" class="navbar-brand">Awesomex</a>
+                <h2>Now.</h2>
+                <p>You can easy make ur own lists.</p>
+                <button class="btn">SIGN UP FOR FREE</button>
+            </div>
+            <div class="right-container">
+                <div class="tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#login" data-toggle="tab">LOG IN</a></li>
+                        <li><a href="#signup" data-toggle="tab">Sign up</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="login">
+                            <form action="./">                                    
+                                <p>Arrivera cailloux ces defoncat cornette les regardez ifs activite. Massacre casernes en la philippe courages aussitot ah longeait</p>
+                                <div class="form-group">
+                                    <a href="#" class="btn btn-google">GOOGLE</a>
+                                    <a href="#" class="btn btn-fb">FACEBOOK</a>                                    
+                                </div>
+                                <p class="or">or</p>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="e-mail" id="e-mail" placeholder="E-mail">
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="password">
+                                </div>
+                                <button class="btn btn-danger">log in</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="signup">                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="signup-e-mail" id="signupe-mail" placeholder="E-mail">
+                                <input type="password" class="form-control" name="signup-password" id="signup-password" placeholder="password">                                    
+                            </div>
+                            <button class="btn btn-danger">Sign up</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
+  
+
+</body></html>

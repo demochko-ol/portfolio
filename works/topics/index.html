@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Topics</title>
+        <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+        <link rel="SHORTCUT ICON" href="favicon.ico">
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+          <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+          <script src="js/js.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header navbar">                
+                <div class="navbar-header">                        
+                    <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navigation" data-target="#navigation" data-toggle="collapse" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Topics</a>
+                </div>
+                <nav id="navigation" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav"> 
+                        <li>
+                            <a href="#">questions</a>
+                        </li> 
+                        <li class="dropdown"> 
+                            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Categories <!-- <span class="caret"></span> -->
+                            </a> 
+                            <ul class="dropdown-menu"> 
+                                <li>
+                                    <a href="#">Action</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li> 
+                            </ul> 
+                        </li> 
+                        <li class="dropdown"> 
+                            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Tags <!-- <span class="caret"></span> -->
+                            </a> 
+                            <ul class="dropdown-menu"> 
+                                <li>
+                                    <a href="#">Action</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li> 
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li> 
+                            </ul> 
+                        </li> 
+                        <li>
+                            <a href="#">users</a>
+                        </li> 
+                    </ul>                    
+                    <button class="new" data-toggle="dropdown" type="button">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <!-- <span class="plus">+</span> -->
+                        <span class="hidden-text">New Topic</span>
+                    </button>  
+                    <div class="search">
+                        <form class="form-group">
+                            <span class="glyphicon glyphicon-search search-toggle"></span>
+                            <button class="glyphicon glyphicon-search" type="submit"></button>
+                            <div class="form-control-wrap">
+                                <input type="text" class="form-control" placeholder="Search topics and tags">
+                            </div>                                
+                        </form>
+                    </div> 
+                </nav>
+            </header>             
+            <main>
+                <div class="question">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="content">
+                                <h4 class="title">Question:</h4>
+                                <article>
+                                    <h2>Exploiting Facebook Open Graph to Email Your Facebook Followers</h2>
+                                    <div class="author">
+                                        <div class="user">
+                                            <a href="#" class="img">
+                                                <img src="images/avatar.jpg" alt="...">
+                                            </a>
+                                            <a href="#" class="name">Gordon White</a>
+                                        </div>
+                                        <p class="time hour"><i></i><time datetime="2015-12-18">45 minutes ago</time></p>
+                                        <p class="views"><i></i><span>15</span></p>
+                                    </div>
+                                    <div class="article-content">
+                                        <p>I’ve been testing out a ton of different ways to target people through Facebook’s advertising platform recently. During my testing, I got a little sidetracked and started looking at ways to not only email your own Facebook followers, but also the followers of your competitors.</p>
+                                        <p>To be able to gather any extra information about your followers, you’ll need each of their UIDs. Unfortunately, Facebook doesn’t make acquiring this information easy for you. In fact, they actively make it tough so that sneaky little marketers like me can’t use the UIDs to target users in a way that doesn’t use their own targeting and segmenting options (which aren’t great).</p>
+                                        <p>In order to extract these UIDs, you’ll need to use a tool called Facebook ID Scraper (Note: I have no affiliation with this tool whatsoever). The tool costs $50, but you can use it under its free license for up to 500 UIDs.</p>
+                                    </div>
+                                    <div class="tags-container">
+                                        <p>Tags:</p>
+                                        <ul class="tags">
+                                            <li><a href="#">Facebook</a></li>
+                                            <li><a href="#">Exploiting</a></li>
+                                        </ul>
+                                    </div>                     
+                                </article>
+                                <div class="answers">
+                                    <div class="sort">
+                                        <h4 class="title">Answers</h4>
+                                        <div class="btn-toolbar" role="toolbar">
+                                            <div class="sort-label">Sort by:</div>
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-primary active"><span>Date</span></a>
+                                                <a href="#" class="btn btn-primary"><span>Likes</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="pull-left">
+                                            <a class="img" href="#">
+                                                <img class="media-object" src="images/avatar2.jpg" alt="...">
+                                            </a>
+                                            <a href="#">Trevor Monkster</a>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>There have been a number of tools like this that keep getting shut down by Facebook, but this tool seems to have stuck around the longest (new ones keep popping up all the time, though). I actually mentioned a tool called Social Lead Fox previously that did this job; however, this tool no longer works now.</p>
+                                            <p>Anyway, once you’ve got the tool up and running, you can search for your Facebook page using the search tool and export all of the UIDs to a .csv file. It’s really simple.</p>
+                                            <div class="comments">
+                                                <a class="add-comments pull-left">4 comments</a>
+                                                <div class="clear">
+                                                    <div class="media">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar3.jpg" alt="...">
+                                                            </a>
+                                                            <a href="#">John William David</a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p>There have been a number of tools like this that keep getting shut down by Facebook, but this tool seems to have stuck around the longest (new ones keep popping up all the time, though). I actually mentioned a tool called Social Lead Fox previously that did this job; however, this tool no longer works now.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar3.jpg" alt="...">
+                                                            </a>
+                                                            <a href="#">John William David</a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p>Anyway, once you’ve got the tool up and running, you can </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar3.jpg" alt="...">
+                                                            </a>
+                                                            <a href="#">John William David</a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p>Anyway, once you’ve got the tool up and running, you can search for your Facebook page using the search tool and export all of the UIDs to a .csv file. It’s really simple.</p>
+                                                        </div>
+                                                    </div>               
+                                                    <div class="media post">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar7.jpg" alt="...">
+                                                            </a>
+                                                            <a href="#">John William David</a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control" rows="1"></textarea>
+                                                                </div>
+                                                                <button class="btn btn-primary">Post comment</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="share pull-right move-top">
+                                                    <a href="#" class="like">5 Likes</a>
+                                                    <a href="#" class="like">Share</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="pull-left">
+                                            <a class="img" href="#">
+                                                <img class="media-object" src="images/avatar3.jpg" alt="...">
+                                            </a>
+                                            <a href="#">John William David</a>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>There have been a number of tools like this that keep getting shut down by Facebook, but this tool seems to have stuck around the longest (new ones keep popping up all the time, though). I actually mentioned a tool called Social Lead Fox previously that did this job; however, this tool no longer works now.</p>
+                                            <div class="comments">
+                                                <a class="add-comments pull-left">3 comments</a>
+                                                <div class="clear">
+                                                    <div class="media">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar4.jpg" alt="...">
+                                                            </a> 
+                                                            <a href="#">John William David</a>      
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p>There have been a number of tools like this that keep getting shut down by Facebook, but this tool seems to have stuck around the longest (new ones keep popping up all the time, though). I actually mentioned a tool called Social Lead Fox previously that did this job; however, this tool no longer works now.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar5.jpg" alt="...">
+                                                            </a>
+                                                            <a href="#">John William David</a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p>Anyway, once you’ve got the tool up and running, you can </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar6.jpg" alt="...">
+                                                            </a>
+                                                            <a href="#">John William David</a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p>Anyway, once you’ve got the tool up and running, you can search for your Facebook page using the search tool and export all of the UIDs to a .csv file. It’s really simple.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="media post">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar7.jpg" alt="...">
+                                                            </a>
+                                                            <a href="#">John William David</a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control" rows="1"></textarea>
+                                                                </div>
+                                                                <button class="btn btn-primary">Post comment</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="share pull-right move-top">
+                                                    <a href="#" class="like">5 Likes</a>
+                                                    <a href="#" class="like">Share</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="pull-left">
+                                            <a class="img" href="#">
+                                                <img class="media-object" src="images/avatar8.jpg" alt="...">
+                                            </a>
+                                            <a href="#">Trevor Monkster</a>
+                                        </div>
+                                        <div class="media-body">
+                                            <p>Inbound Marketing: Attract, Engage, and Delight Customers Online is a comprehensive guide to increasing online visibility and engagement. Written by top marketing and startup bloggers, the book contains the latest information about customer behavior and preferred digital experiences. From the latest insights on lead nurturing and visual marketing to advice on producing remarkable content by building tools, readers will gain the information they need to transform their marketing online.</p>
+                                            <div class="comments new-comments">
+                                                <a class="add-comments pull-left">Add comment</a>
+                                                <div class="clear">
+                                                    <div class="media post">
+                                                        <div class="pull-left">
+                                                            <a class="img" href="#">
+                                                                <img class="media-object" src="images/avatar7.jpg" alt="...">
+                                                            </a>
+                                                            <a href="#">John William David</a>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control" rows="1"></textarea>
+                                                                </div>
+                                                                <button class="btn btn-primary">Post comment</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="title">My opinion</h4>                                
+                                <div class="media media-form">
+                                    <div class="pull-left">
+                                        <a class="img" href="#">
+                                            <img class="media-object" src="images/avatar8.jpg" alt="...">
+                                        </a>
+                                        <a href="#">Trevor Monkster</a>
+                                    </div>
+                                    <div class="media-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <textarea class="form-control" rows="1"></textarea>
+                                            </div>
+                                            <button class="btn btn-primary pull-right">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <aside class="sidebar">
+                                <div class="user-wrap">
+                                    <div class="user">
+                                        <a href="#" class="img">
+                                            <img src="images/avatar.jpg" alt="...">
+                                        </a>
+                                        <a href="#" class="name">Andrew Cooper</a>
+                                    </div>
+                                    <ul class="menu-list">
+                                        <li><a href="#">My notifications</a></li>
+                                        <li><a href="#">My topics</a></li>
+                                        <li><a href="#">My settings</a></li>
+                                        <li><a href="#">Log Out</a></li>
+                                    </ul>
+                                </div>
+                                <div class="participants-wrap">
+                                    <h4 class="title"><span>37</span> discussants</h4>
+                                    <div class="participants">
+                                        <ul>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar2.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar3.jpg">
+                                                </a>
+                                                <a href="#">John William David</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar4.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar5.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar6.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary pull-right">See all</a>
+                                    </div>
+                                </div>
+                                <div class="participants-wrap">
+                                    <h4 class="title"><span>42</span> followers</h4>
+                                    <div class="participants">
+                                        <ul>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar7.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar8.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar2.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar3.jpg">
+                                                </a>
+                                                <a href="#">John William David</a>
+                                            </li>
+                                            <li>
+                                                <a class="img" href="#">
+                                                    <img class="media-object" alt="..." src="images/avatar4.jpg">
+                                                </a>
+                                                <a href="#">Trevor Monkster</a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="btn btn-primary pull-right">See all</a>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>    
+                <div class="related">
+                    <div class="container-fluid">
+                        <div class="sort">
+                            <h4 class="title">Related</h4>
+                            <div class="btn-toolbar" role="toolbar">
+                                    <div class="sort-label">Sort by:</div>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-primary active"><span>Date</span></a>
+                                    <a href="#" class="btn btn-primary"><span>Answers</span></a>
+                                    <a href="#" class="btn btn-primary"><span>Followers</span></a>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="article row">
+                            <div class="col-sm-9">
+                                <h3 class="featurette-heading">
+                                    <a href="#">Moving our site to HTTPS and the early SEO-effects of it </a>
+                                </h3>
+                                <div class="author">
+                                    <div class="user">
+                                        <a href="#" class="img">
+                                            <img src="images/avatar.jpg" alt="...">
+                                        </a>
+                                        <a href="#" class="name">Andrew Zusman</a>
+                                    </div>
+                                    <p class="time"><i></i><time datetime="2015-12-18">10 minutes ago</time></p>
+                                    <p class="views"><i></i><span>7</span></p>
+                                    <ul class="tags">
+                                        <li><a href="#">SEO</a></li>
+                                        <li><a href="#">Security</a></li>
+                                        <li><a href="#">web-protocol</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="icons">
+                                    <a href="#" class="comment-link">
+                                        <span class="badge">5</span>
+                                    </a>
+                                    <a href="#" class="user-link">
+                                        <span class="badge">17</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                 
+                        <div class="article row">
+                            <div class="col-sm-9">
+                                <h3 class="featurette-heading">
+                                    <a href="#">Exploiting Facebook Open Graph to Email Your Facebook Followers</a>
+                                </h3>
+                                <div class="author">
+                                    <div class="user">
+                                        <a href="#" class="img">
+                                            <img src="images/avatar.jpg" alt="...">
+                                        </a>
+                                        <a href="#" class="name">nickname</a>
+                                    </div>
+                                    <p class="time hour"><i></i><time datetime="2015-12-18">45 minutes ago</time></p>
+                                    <p class="views"><i></i><span>15</span></p>
+                                    <ul class="tags">
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Exploiting</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="icons">
+                                    <a href="#" class="comment-link">
+                                        <span class="badge">5</span>
+                                    </a>
+                                    <a href="#" class="user-link">
+                                        <span class="badge">17</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>       
+                        <div class="article row">
+                            <div class="col-sm-9">
+                                <h3 class="featurette-heading">
+                                    <a href="#">Strategize, Test, Measure: The Bullseye Framework — Brian Balfour's Coelevate</a>
+                                </h3>
+                                <div class="author">
+                                    <div class="user">
+                                        <a href="#" class="img">
+                                            <img src="images/avatar.jpg" alt="...">
+                                        </a>
+                                        <a href="#" class="name">nickname</a>
+                                    </div>
+                                    <p class="time hour"><i></i><time datetime="2015-12-18">45 minutes ago</time></p>
+                                    <p class="views"><i></i><span>15</span></p>
+                                    <ul class="tags">
+                                        <li><a href="#">The Bullseye framework</a></li>
+                                        <li><a href="#">practice</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="icons">
+                                    <a href="#" class="comment-link">
+                                        <span class="badge">5</span>
+                                    </a>
+                                    <a href="#" class="user-link">
+                                        <span class="badge">17</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>       
+                        <div class="article row">
+                            <div class="col-sm-9">
+                                <h3 class="featurette-heading">
+                                    <a href="#">Ask Inbound: What's Your Process For Creating an E-Book?</a>
+                                </h3>
+                                <div class="author">
+                                    <div class="user">
+                                        <a href="#" class="img">
+                                            <img src="images/avatar.jpg" alt="...">
+                                        </a>
+                                        <a href="#" class="name">nickname</a>
+                                    </div>
+                                    <p class="time hour"><i></i><time datetime="2015-12-18">45 minutes ago</time></p>
+                                    <p class="views"><i></i><span>15</span></p>
+                                    <ul class="tags">
+                                        <li><a href="#">mobile</a></li>
+                                        <li><a href="#">Apple</a></li>
+                                        <li><a href="#">iPad</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="icons">
+                                    <a href="#" class="comment-link">
+                                        <span class="badge">5</span>
+                                    </a>
+                                    <a href="#" class="user-link">
+                                        <span class="badge">17</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article row">
+                            <div class="col-sm-9">
+                                <h3 class="featurette-heading">
+                                    <a href="#">Dyson 360 Eye </a>
+                                </h3>
+                                <div class="author">
+                                    <div class="user">
+                                        <a href="#" class="img">
+                                            <img src="images/avatar.jpg" alt="...">
+                                        </a>
+                                        <a href="#" class="name">Andrew Zusman</a>
+                                    </div>
+                                    <p class="time"><i></i><time datetime="2015-12-18">10 minutes ago</time></p>
+                                    <p class="views"><i></i><span>7</span></p>
+                                    <ul class="tags">
+                                        <li><a href="#">Dyson</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="icons">
+                                    <a href="#" class="comment-link">
+                                        <span class="badge">5</span>
+                                    </a>
+                                    <a href="#" class="user-link">
+                                        <span class="badge">17</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="pagination-container">
+                            <p>Pages:</p>
+                            <ul class="pagination">
+                              <li style="display:none;"><a href="#">&#8592;</a></li>
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li><a href="#">6</a></li>
+                              <li><a href="#">7</a></li>
+                              <li><a href="#">8</a></li>
+                              <li><a href="#">9</a></li>
+                              <li><a href="#">10</a></li>
+                              <li><a href="#">&#8594;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                    
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="f-nav">
+                    <ul> 
+                        <li>
+                            <a href="#">About us</a>
+                        </li>  
+                        <li>
+                            <a href="#">contact us</a>
+                        </li>                      
+                        <li>
+                            <a href="#">blog</a>
+                        </li> 
+                    </ul>
+                </nav>
+                <div class="social-list">
+                    <ul>
+                        <li>
+                            <a class="pure-button socicon-button" href="#"><span class="socicon socicon-twitter"></span></a>
+                        </li>
+                        <li>
+                            <a class="pure-button socicon-button" href="#"><span class="socicon socicon-googleplus"></span></a>
+                        </li>
+                        <li>
+                            <a class="pure-button socicon-button" href="#"><span class="socicon socicon-facebook"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
