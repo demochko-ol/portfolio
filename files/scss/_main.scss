@@ -306,14 +306,11 @@ section{
 		opacity: .2;
 	}
 	ul{
-		text-align: center;
+		
 		li{
-			display: inline-block;
-			position: relative;
-			text-align: left;
-			width: 49%;
+			display: block;
+			position: relative;			
 			font: 17px/1.2 'open_sanssemibold';
-			vertical-align: middle;
 			padding: 15px 20px;
 			&:before{
 				position: absolute;
