@@ -16,15 +16,17 @@
 <div class="wrapper">
 	<header class="header">
 		<nav class="main-nav">
-		<div class="logo"><a href="#">Olga Demochko</a></div>
-			<ul>
-				<li><a href="#">About me</a></li>
-				<li><a href="#">My skills</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">contacts</a></li>
-			</ul>
+			<div class="container">
+				<div class="logo"><a href="#">Olga Demochko</a></div>
+				<ul>
+					<li><a href="#">About me</a></li>
+					<li><a href="#">My skills</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">contacts</a></li>
+				</ul>
+			</div>
 		</nav>
-		<div class="container">
+		<div class="header-container">
 			<div class="header-content">
 				<h1>Olga Demochko <small>Responsive Front-end Development</small></h1>
 				<ul class="list-inline">
@@ -44,45 +46,45 @@
 			<div class="container">
 				<h2>About me</h2>
 
-				<div class="about-item">
+				<section class="about-item">
 					<h3>Education</h3>
 					<ul>
-						<li><h4>Kharkiv National University of Radioelectronics (KNURE)</h4>
+						<li><h5>Kharkiv National University of Radioelectronics (KNURE)</h5>
 							<p>Faculty of Computer Sciences (CS) </p>
 							<p>Technologies of publications</p>
 						</li>
 						<li>
-							<h4>Kharkiv National University of Radioelectronics (KNURE)</h4>
+							<h5>Kharkiv National University of Radioelectronics (KNURE)</h5>
 							<p>Faculty of Lifelong Learning</p>
 							<p>Economic cybernetics</p>
 						</li>
 					</ul>
-				</div>
-				<div class="about-item">
+				</section>
+				<section class="about-item">
 					<h3>Work Experience</h3>
 					<ul>
 						<li>
 							
 						</li>
 						<li>
-							Front-End Developer | Jan 2011 - Jan 2014
+							<p>Nix Solutions</p>
+							Front end designer/developer | Jan 2011 - Jan 2014
 						</li>
 					</ul>
-				</div>
-				
+				</section>				
 			</div>
 		</section>		
 		<section class="skills">
 			<div class="container">
-				<h2>My skills</h2>
+				<h2 class="red">My skills</h2>
 				<ul>
-					<li>experience as front end designer/developer</li>
+					<li>Experience as front end designer/developer</li>
 					<li>Strong knowledge of HTML/XHTML and CSS2.1/CSS3</li>
 					<li>Good knowledge of Less, SCSS</li>
 					<li>Good understanding of JavaScript, jQuery</li>
 					<li>Twitter Bootstrap</li>
 					<li>Experience with Git</li>
-					<li>Practical skills in cross-browser layout and cross-platform web-programming, adaptive web design</li>
+					<li>Practical skills in cross-browser layout and adaptive web design</li>
 					<li>Experience with Photoshop, Fireworks and related tools</li>
 					<li>Attention to detail and absolute focus on quality of work</li>
 					<li>Ability to write standards-compliant code that works across browsers</li>
@@ -130,7 +132,7 @@
 										<li>[swepokf</li>
 									</ul>
 								</div>
-							</div>	sdf						
+							</div>				
 						</a>
 					</li>
 					<li>
@@ -145,7 +147,7 @@
 										<li>[swepokf</li>
 									</ul>
 								</div>
-							</div>		dfg					
+							</div>	
 						</a>
 					</li>
 					<li>
@@ -258,22 +260,34 @@
 			</div>
 		</section>
 		<section class="contacts">
-			<h3>Contact me</h3>
-			<dl>
-				<dt>phone number:</dt>
-				<dd>+38(050) 96-014-97</dd>
-				<dt>Skype:</dt>
-				<dd>olga.demochko</dd>
-				<dt>E-mail:</dt>
-				<dd>demochko.ol@gmail.com</dd>
-			</dl>
+			<div class="container">
+				<h3 class="red">Contact me</h3>
+				<p>Have a cool project in mind, and think I can help you with it?<br>
+				Feel free to e-mail me or call</p>
+				<div class="contacts-container">
+					<div class="col3">
+						<i></i>
+						<p>+38(050) 96-014-97</p>
+					</div>
+					<div class="col3">
+						<i></i>
+						<p>olga.demochko</p>
+					</div>
+					<div class="col3">
+						<i></i>
+						<p>demochko.ol@gmail.com</p>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main><!-- .content -->
 
 </div><!-- .wrapper -->
 
 <footer class="footer">
-	<p>Copyright © 2016 Olga Demochko.</p> 
+	<div class="container">		
+		<p>Copyright © 2016 Olga Demochko.</p> 
+	</div>
 </footer><!-- .footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="files/js/js.js"></script>

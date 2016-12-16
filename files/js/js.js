@@ -8,4 +8,7 @@ $(function(){
 
 
 	setsHeaderHeight();
+	$(window).scroll(function(){		
+		$(".main-nav").toggleClass('fixed-top', $(window).scrollTop()>$('.header').outerHeight());		
+	})
 });

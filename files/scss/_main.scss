@@ -10,25 +10,97 @@ html{
 }
 html,
 body{
-	font: 16px/1.2 "Arial";
+	font: 16px/1.2 "open_sansregular";
 	height: 100%;
 }
 /* 
+----------Fonts---------- */
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 
+----------End Fonts---------- */
+/* 
 ----------Tipography---------- */
 h1{
-	font-size: 40px;
+	font: 50px/1.2 'open_sansbold', sans-serif;
+	color: $el-color;
+	margin-top: 20px 0 30px;
 	small{
+		color: #fff;
 		display: block;
+		font-size: 40px;
+		margin: 10px 0;
 	}
 }
-h2{
-	font-size: 30px;
+h2,
+.section-title{	
+	font: 30px/1.2 'open_sansbold', sans-serif;
+	text-align: center;
+	position: relative;
+	margin: 10px 0 55px;
+	text-transform: uppercase;
+	&:before{
+		position: absolute;
+		content: '';
+		bottom: -22px;
+		width: 70px;
+		height: 4px;
+		left: 50%;
+		margin-left: -35px;
+		background: $el-color;
+	}
+	&.red:before{
+		background: $el-red-color;
+	}
 }
 h3{
-	font-size: 26px;
+	font: 26px/1.2 'open_sansbold', sans-serif;
+	margin-bottom: 15px;
 }
-h4{}
-h5{}
+h4{
+	font: 22px/1.2 'open_sansbold', sans-serif;
+}
+h5{
+	font: 16px/1.2 'open_sanssemibold', sans-serif;
+}
 h6{}
 p{
 
@@ -36,12 +108,17 @@ p{
 a{
 	
 }
+img,a,.btn,input,select{
+	@include focus();
+}
 /* 
 ----------End Tipography---------- */
 .btn{
-	@include btn($theme-color);
+	@include btn($el-red-color, $hover-el-red-color);
 	@include bd_radius(5px);
-
+	cursor: pointer;
+	font: 14px/1.2 'open_sanssemibold';
+	text-transform: uppercase;
 }
 /* 
 ----------Grid---------- */
@@ -49,12 +126,21 @@ a{
 	&:before,
 	&:after{
 		content: '';
-
+		display: table;
+		clear: both;
 	}
 }
 .container{
 	max-width: 1440px;
 	margin: 0 auto;
+}
+.col3{
+	width: 33.333%;
+	float: left;
+}
+.col2{
+	width: 50%;
+	float: left;
 }
 /* 
 ----------End Grid---------- */
@@ -71,7 +157,8 @@ main{
 	padding: 0 0 $f-height;
 }
 section{
-	padding: 25px 0;
+	padding: 30px 0 40px;
+	z-index: 1;
 }
 .footer{
 	height: $f-height;
@@ -87,28 +174,33 @@ section{
 	background: url("#{$files}bg1.jpg") fixed center center no-repeat;
 	color: #fff;
 	text-align: center;
-	padding: 50px;
 	position: relative;
-	.container{
+	.header-container{
 		position: absolute;
 		display: table;
 		width: 100%;
 		height: 100%;
+		top: 0;
+		padding: 50px 0;
 		left: 0;
 		right: 0;
 		.header-content{
 			height: 100%;
 			display: table-cell;
 			vertical-align: middle;
-			padding-bottom: 50px;
 		}
 	}
 	.logo{
-		display: inline-block;
+		float: left;
+		opacity: 0;
+		@include transition( opacity 0.3s linear);
+		margin-left: -100%;
 		a{
-			color: #34CCFE;
+			color: #fff;
 			text-decoration: none;
-			font-size: 22px;
+			font-size: 18px;
+    		padding: 10px 0;
+    		display: block;
 		}
 	}
 	.main-nav{
@@ -116,32 +208,55 @@ section{
 		left: 0;
 		right: 0;
 		bottom: 0;
+		padding: 10px 50px;
+		z-index: 1010;
 		/* background: #fff; */
 		width: 100%;
-		font-size: 12px;
+		font: 12px/1.2 'open_sanssemibold', sans-serif;
 		ul{
-			/* float: right; */
+			overflow: hidden;
+			text-align: left;
+			@include transition( all 0.5s);
 		}
-		li{
-			display: table-cell;
+		li{		
 			padding: 15px 0;
-			width: 25%;
+			@include transition( all 0.5s);
+			display: inline-block;
 			a{
-				color: $theme-color;
+				color: #fff;
 				padding: 0 15px;
 				text-transform: uppercase;
 				text-decoration: none;
+				&:hover{
+					color: $el-color;
+				}
+			}
+		}
+		&.fixed-top{
+			position: fixed;
+			top:0;
+			bottom: auto;
+			background: $theme-color;
+			ul{
+				text-align: right;
+			}
+			.logo{
+				opacity: 1;
+				margin-left: 0;
 			}
 		}
 	}
 	h1{
-		/* background: rgba(0, 48, 91, 0.4); */
-		color: #fff;
+				
+	}
+	.btn{
+		margin-bottom: 40px;
 	}
 	.list-inline{
 		@include list-inline();
 		text-transform: uppercase;
 		font-size: 20px;
+		margin-bottom: 50px;
 		li{
 			margin: 0 10px;
 			position: relative;
@@ -149,12 +264,12 @@ section{
 				position: absolute;
 				content: '';
 				top: 50%;
-				margin-top: -4px;
+				margin-top: -3px;
 				width: 6px;
 				height: 6px;
 				@include bd-radius(50%);
 				right: -14px;
-				background: #fff;
+				background: $el-color;
 			}
 			&:last-child:after{
 				display: none;
@@ -170,6 +285,14 @@ section{
 .about{
 	background: $light-grey;
 	padding: 40px 0;
+	text-align: center;
+	@extend .clearfix;
+	.about-item{
+		@extend .col2;
+		li{
+			margin-bottom: 10px;
+		}
+	}
 }
 .skills{
 	position: relative;
@@ -179,14 +302,42 @@ section{
 		width: 100%;
 		top: 0;
 		bottom: 0;
-		background: url("#{$files}devices.jpg") fixed center center no-repeat;
-		opacity: .3;
+		background: url("#{$files}devices1.jpg") fixed center center no-repeat;
+		opacity: .2;
+	}
+	ul{
+		text-align: center;
+		li{
+			display: inline-block;
+			position: relative;
+			text-align: left;
+			width: 49%;
+			font: 17px/1.2 'open_sanssemibold';
+			vertical-align: middle;
+			padding: 15px 20px;
+			&:before{
+				position: absolute;
+				content: '';
+				top: 50%;
+				margin-top: -3px;
+				width: 6px;
+				height: 6px;
+				@include bd-radius(50%);
+				left: 0;
+				background: $el-light-red-color;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				height: 1px;
+				left: 20px;
+				right: 20px;
+				border-bottom: 1px dashed $el-light-red-color;
+			}
+		}
 	}
 }
-/* 
-----------End Middle---------- */
-
-
 /* 
 ----------Portfolio Section---------- */
 
@@ -213,10 +364,12 @@ section{
 			}
 			&:hover{
 				img{
-					@include transform(scale(1.02));
+					@include transform(scale(1.05));
 				}
 				.description-wrap{
-					background: rgba(65,183,196,0.9);
+					/* background: rgba(65,183,196,0.9); */
+					opacity: 1;
+					
 				}
 				.description{
 					opacity: 1;
@@ -226,13 +379,15 @@ section{
 		.description-wrap{
 			@include transition(all 0.2s linear);
 			position: absolute;
-			width: 50%;
+			width: 100%;
 			top: 0;
 			right: 0;
+			left: 0;
 			bottom: 0;
 			padding: $grid-padding;
-			background: rgba(0,48,91,0.75);
 			text-align: center;
+			background: rgba(0,0,0,0.6);
+			opacity: 0;
 		}
 		.description{
 			opacity: 0;
@@ -245,3 +400,50 @@ section{
 
 /* 
 ----------End Portfolio Section---------- */
+/* 
+----------Contacts Section---------- */
+.contacts{
+	background: url("#{$files}contacts_bg.jpg") fixed center center no-repeat;
+	color: #fff;
+	text-align: center;
+	h3{
+		@extend .section-title;
+		font-size: 26px;
+		&+p{
+			margin-bottom: 30px;
+		}
+	}
+	.contacts-container{
+		@extend .clearfix;
+		margin-bottom: 20px;
+		.col3{
+			font: 18px/1.2 'open_sanssemibold';
+		}
+		i{
+			display: inline-block;
+			width: 26px;
+			height: 26px;
+			margin-bottom: 20px;
+		}
+	}
+}
+/* 
+----------End Contacts Section---------- */
+
+/* 
+----------End Middle---------- */
+
+/* 
+----------Footer---------- */
+.footer{
+	text-align: center;
+	background: $theme-color;
+	color: #fff;
+	font-size: 14px;
+	padding: 20px;
+	p{
+		padding: 2px 0;
+	}
+}
+/* 
+---------- End Footer---------- */

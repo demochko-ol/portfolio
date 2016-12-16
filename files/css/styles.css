@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, c:\Program Files (x86)\Prepros\gems\gems\compass-core-1.0.0.alpha.19\stylesheets\compass\reset\_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -90,62 +90,162 @@ html {
 /* line 11, ../scss/_main.scss */
 html,
 body {
-  font: 16px/1.2 "Arial";
+  font: 16px/1.2 "open_sansregular";
   height: 100%;
 }
 
 /* 
+----------Fonts---------- */
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sanslight';
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("../fonts/opensans-semibold-webfont.eot");
+  src: url("../fonts/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff"), url("../fonts/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 
+----------End Fonts---------- */
+/* 
 ----------Tipography---------- */
-/* line 18, ../scss/_main.scss */
+/* line 62, ../scss/_main.scss */
 h1 {
-  font-size: 40px;
+  font: 50px/1.2 'open_sansbold', sans-serif;
+  color: #50b75e;
+  margin-top: 20px 0 30px;
 }
-/* line 20, ../scss/_main.scss */
+/* line 66, ../scss/_main.scss */
 h1 small {
+  color: #fff;
   display: block;
+  font-size: 40px;
+  margin: 10px 0;
 }
 
-/* line 24, ../scss/_main.scss */
-h2 {
-  font-size: 30px;
+/* line 73, ../scss/_main.scss */
+h2,
+.section-title,
+.contacts h3 {
+  font: 30px/1.2 'open_sansbold', sans-serif;
+  text-align: center;
+  position: relative;
+  margin: 10px 0 55px;
+  text-transform: uppercase;
+}
+/* line 80, ../scss/_main.scss */
+h2:before,
+.section-title:before,
+.contacts h3:before {
+  position: absolute;
+  content: '';
+  bottom: -22px;
+  width: 70px;
+  height: 4px;
+  left: 50%;
+  margin-left: -35px;
+  background: #50b75e;
+}
+/* line 90, ../scss/_main.scss */
+h2.red:before,
+.section-title.red:before,
+.contacts h3.red:before {
+  background: #e6230a;
 }
 
-/* line 27, ../scss/_main.scss */
+/* line 94, ../scss/_main.scss */
 h3 {
-  font-size: 26px;
+  font: 26px/1.2 'open_sansbold', sans-serif;
+  margin-bottom: 15px;
+}
+
+/* line 98, ../scss/_main.scss */
+h4 {
+  font: 22px/1.2 'open_sansbold', sans-serif;
+}
+
+/* line 101, ../scss/_main.scss */
+h5 {
+  font: 16px/1.2 'open_sanssemibold', sans-serif;
+}
+
+/* line 7, ../scss/_mixins.scss */
+img:focus, img:active, img:hover, a:focus, a:active, a:hover, .btn:focus, .btn:active, .btn:hover, input:focus, input:active, input:hover, select:focus, select:active, select:hover {
+  outline: none;
 }
 
 /* 
 ----------End Tipography---------- */
-/* line 41, ../scss/_main.scss */
+/* line 116, ../scss/_main.scss */
 .btn {
-  border: 2px solid #6AA549;
-  color: #6AA549;
+  border: 2px solid #e6230a;
+  color: #e6230a;
   padding: 8px 35px;
-  border: none;
+  background: none;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  cursor: pointer;
+  font: 14px/1.2 'open_sanssemibold';
+  text-transform: uppercase;
+}
+/* line 42, ../scss/_mixins.scss */
+.btn:hover {
+  color: #f7341b;
+  border-color: #f7341b;
 }
 
 /* 
 ----------Grid---------- */
-/* line 49, ../scss/_main.scss */
-.clearfix:before, .clearfix:after {
+/* line 126, ../scss/_main.scss */
+.clearfix:before, .about:before, .contacts .contacts-container:before, .clearfix:after, .about:after, .contacts .contacts-container:after {
   content: '';
+  display: table;
+  clear: both;
 }
 
-/* line 55, ../scss/_main.scss */
+/* line 133, ../scss/_main.scss */
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+/* line 137, ../scss/_main.scss */
+.col3 {
+  width: 33.333%;
+  float: left;
+}
+
+/* line 141, ../scss/_main.scss */
+.col2, .about .about-item {
+  width: 50%;
+  float: left;
 }
 
 /* 
 ----------End Grid---------- */
 /* 
 ----------Layout---------- */
-/* line 64, ../scss/_main.scss */
+/* line 150, ../scss/_main.scss */
 .wrapper {
   height: 100%;
   min-height: 100%;
@@ -153,123 +253,159 @@ h3 {
   min-width: 320px;
 }
 
-/* line 70, ../scss/_main.scss */
+/* line 156, ../scss/_main.scss */
 main {
-  padding: 0 0 100px;
+  padding: 0 0 60px;
 }
 
-/* line 73, ../scss/_main.scss */
+/* line 159, ../scss/_main.scss */
 section {
-  padding: 25px 0;
+  padding: 30px 0 40px;
+  z-index: 1;
 }
 
-/* line 76, ../scss/_main.scss */
+/* line 163, ../scss/_main.scss */
 .footer {
-  height: 100px;
-  margin-top: -100px;
+  height: 60px;
+  margin-top: -60px;
 }
 
 /* 
 ----------End Layout---------- */
 /* 
 ----------Header---------- */
-/* line 86, ../scss/_main.scss */
+/* line 173, ../scss/_main.scss */
 .header {
   background: url("../images/bg1.jpg") fixed center center no-repeat;
   color: #fff;
   text-align: center;
-  padding: 50px;
   position: relative;
 }
-/* line 92, ../scss/_main.scss */
-.header .container {
+/* line 178, ../scss/_main.scss */
+.header .header-container {
   position: absolute;
   display: table;
   width: 100%;
   height: 100%;
+  top: 0;
+  padding: 50px 0;
   left: 0;
   right: 0;
 }
-/* line 99, ../scss/_main.scss */
-.header .container .header-content {
+/* line 187, ../scss/_main.scss */
+.header .header-container .header-content {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
-  padding-bottom: 50px;
 }
-/* line 106, ../scss/_main.scss */
+/* line 193, ../scss/_main.scss */
 .header .logo {
-  display: inline-block;
+  float: left;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  margin-left: -100%;
 }
-/* line 108, ../scss/_main.scss */
+/* line 198, ../scss/_main.scss */
 .header .logo a {
-  color: #34CCFE;
+  color: #fff;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
+  padding: 10px 0;
+  display: block;
 }
-/* line 114, ../scss/_main.scss */
+/* line 206, ../scss/_main.scss */
 .header .main-nav {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 10px 50px;
+  z-index: 1010;
   /* background: #fff; */
   width: 100%;
-  font-size: 12px;
+  font: 12px/1.2 'open_sanssemibold', sans-serif;
 }
-/* line 122, ../scss/_main.scss */
+/* line 216, ../scss/_main.scss */
 .header .main-nav ul {
-  /* float: right; */
+  overflow: hidden;
+  text-align: left;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
-/* line 125, ../scss/_main.scss */
+/* line 221, ../scss/_main.scss */
 .header .main-nav li {
-  display: table-cell;
   padding: 15px 0;
-  width: 25%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: inline-block;
 }
-/* line 129, ../scss/_main.scss */
+/* line 225, ../scss/_main.scss */
 .header .main-nav li a {
-  color: #6AA549;
+  color: #fff;
   padding: 0 15px;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 137, ../scss/_main.scss */
-.header h1 {
-  /* background: rgba(0, 48, 91, 0.4); */
-  color: #fff;
+/* line 230, ../scss/_main.scss */
+.header .main-nav li a:hover {
+  color: #50b75e;
 }
-/* line 141, ../scss/_main.scss */
+/* line 235, ../scss/_main.scss */
+.header .main-nav.fixed-top {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  background: #162a43;
+}
+/* line 240, ../scss/_main.scss */
+.header .main-nav.fixed-top ul {
+  text-align: right;
+}
+/* line 243, ../scss/_main.scss */
+.header .main-nav.fixed-top .logo {
+  opacity: 1;
+  margin-left: 0;
+}
+/* line 252, ../scss/_main.scss */
+.header .btn {
+  margin-bottom: 40px;
+}
+/* line 255, ../scss/_main.scss */
 .header .list-inline {
   list-style: none;
   text-transform: uppercase;
   font-size: 20px;
+  margin-bottom: 50px;
 }
-/* line 21, ../scss/_variables.scss */
+/* line 26, ../scss/_variables.scss */
 .header .list-inline li {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 145, ../scss/_main.scss */
+/* line 260, ../scss/_main.scss */
 .header .list-inline li {
   margin: 0 10px;
   position: relative;
 }
-/* line 148, ../scss/_main.scss */
+/* line 263, ../scss/_main.scss */
 .header .list-inline li:after {
   position: absolute;
   content: '';
   top: 50%;
-  margin-top: -4px;
+  margin-top: -3px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   right: -14px;
-  background: #fff;
+  background: #50b75e;
 }
-/* line 159, ../scss/_main.scss */
+/* line 274, ../scss/_main.scss */
 .header .list-inline li:last-child:after {
   display: none;
 }
@@ -278,37 +414,78 @@ section {
 ----------End Header---------- */
 /* 
 ----------Middle---------- */
-/* line 170, ../scss/_main.scss */
+/* line 285, ../scss/_main.scss */
 .about {
-  background: #f4f4f4;
+  background: #f5f6f7;
   padding: 40px 0;
+  text-align: center;
+}
+/* line 292, ../scss/_main.scss */
+.about .about-item li {
+  margin-bottom: 10px;
 }
 
-/* line 174, ../scss/_main.scss */
+/* line 297, ../scss/_main.scss */
 .skills {
   position: relative;
 }
-/* line 176, ../scss/_main.scss */
+/* line 299, ../scss/_main.scss */
 .skills:before {
   position: absolute;
   content: "";
   width: 100%;
   top: 0;
   bottom: 0;
-  background: url("../images/devices.jpg") fixed center center no-repeat;
-  opacity: .3;
+  background: url("../images/devices1.jpg") fixed center center no-repeat;
+  opacity: .2;
+}
+/* line 308, ../scss/_main.scss */
+.skills ul {
+  text-align: center;
+}
+/* line 310, ../scss/_main.scss */
+.skills ul li {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 49%;
+  font: 17px/1.2 'open_sanssemibold';
+  vertical-align: middle;
+  padding: 15px 20px;
+}
+/* line 318, ../scss/_main.scss */
+.skills ul li:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  left: 0;
+  background: #f7341b;
+}
+/* line 329, ../scss/_main.scss */
+.skills ul li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  left: 20px;
+  right: 20px;
+  border-bottom: 1px dashed #f7341b;
 }
 
 /* 
-----------End Middle---------- */
-/* 
 ----------Portfolio Section---------- */
-/* line 193, ../scss/_main.scss */
+/* line 344, ../scss/_main.scss */
 .portfolio {
-  background: #f4f4f4;
+  background: #f5f6f7;
   padding: 40px 0;
 }
-/* line 196, ../scss/_main.scss */
+/* line 347, ../scss/_main.scss */
 .portfolio .works {
   font-size: 0;
   line-height: 0;
@@ -318,21 +495,21 @@ section {
   display: inline-block;
   vertical-align: top;
 }
-/* line 198, ../scss/_main.scss */
+/* line 349, ../scss/_main.scss */
 .portfolio .works > li {
   width: 50%;
   padding: 0 20px;
   font: 16px/1.2 "Arial";
   margin-bottom: 40px;
 }
-/* line 204, ../scss/_main.scss */
+/* line 355, ../scss/_main.scss */
 .portfolio .works a {
   display: block;
   position: relative;
   overflow: hidden;
   color: #fff;
 }
-/* line 209, ../scss/_main.scss */
+/* line 360, ../scss/_main.scss */
 .portfolio .works a img {
   width: 100%;
   display: block;
@@ -340,36 +517,39 @@ section {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* line 215, ../scss/_main.scss */
+/* line 366, ../scss/_main.scss */
 .portfolio .works a:hover img {
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  transform: scale(1.02);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
-/* line 218, ../scss/_main.scss */
+/* line 369, ../scss/_main.scss */
 .portfolio .works a:hover .description-wrap {
-  background: rgba(65, 183, 196, 0.9);
+  /* background: rgba(65,183,196,0.9); */
+  opacity: 1;
 }
-/* line 221, ../scss/_main.scss */
+/* line 374, ../scss/_main.scss */
 .portfolio .works a:hover .description {
   opacity: 1;
 }
-/* line 226, ../scss/_main.scss */
+/* line 379, ../scss/_main.scss */
 .portfolio .works .description-wrap {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   position: absolute;
-  width: 50%;
+  width: 100%;
   top: 0;
   right: 0;
+  left: 0;
   bottom: 0;
   padding: 20px;
-  background: rgba(0, 48, 91, 0.75);
   text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
 }
-/* line 237, ../scss/_main.scss */
+/* line 392, ../scss/_main.scss */
 .portfolio .works .description {
   opacity: 0;
   -webkit-transition: all 0.2s linear;
@@ -379,3 +559,56 @@ section {
 
 /* 
 ----------End Portfolio Section---------- */
+/* 
+----------Contacts Section---------- */
+/* line 405, ../scss/_main.scss */
+.contacts {
+  background: url("../images/contacts_bg.jpg") fixed center center no-repeat;
+  color: #fff;
+  text-align: center;
+}
+/* line 409, ../scss/_main.scss */
+.contacts h3 {
+  font-size: 26px;
+}
+/* line 412, ../scss/_main.scss */
+.contacts h3 + p {
+  margin-bottom: 30px;
+}
+/* line 416, ../scss/_main.scss */
+.contacts .contacts-container {
+  margin-bottom: 20px;
+}
+/* line 419, ../scss/_main.scss */
+.contacts .contacts-container .col3 {
+  font: 18px/1.2 'open_sanssemibold';
+}
+/* line 422, ../scss/_main.scss */
+.contacts .contacts-container i {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-bottom: 20px;
+}
+
+/* 
+----------End Contacts Section---------- */
+/* 
+----------End Middle---------- */
+/* 
+----------Footer---------- */
+/* line 438, ../scss/_main.scss */
+.footer {
+  text-align: center;
+  background: #162a43;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+}
+/* line 444, ../scss/_main.scss */
+.footer p {
+  padding: 2px 0;
+}
+
+/* 
+---------- End Footer---------- */
