@@ -6,6 +6,8 @@
 @mixin focus(){
 	&:focus,
 	&:active,
+	&:active:focus,
+	&:link,
 	&:hover{
 		outline: none;
 	}
