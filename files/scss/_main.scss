@@ -100,6 +100,7 @@ h4{
 }
 h5{
 	font: 16px/1.2 'open_sanssemibold', sans-serif;
+	margin-bottom: 5px;
 }
 h6{}
 p{
@@ -278,7 +279,7 @@ section{
 			display: inline-block;
 			background: $theme-color;	
 			padding: 7px 10px;
-			height: 51px;
+			/* height: 51px; */
 			&:before{
 				position: absolute;
 				width: 0;
@@ -321,25 +322,17 @@ section{
 			display: inline-block;
 			vertical-align: middle;
 			text-align: center;	
+			&:hover a,
+			&.active a{	
+				color: $el-red-color;					
+			}
 			a{
 				color: #fff;
 				padding: 0 10px;
 				text-transform: uppercase;
 				text-decoration: none;
 				position: relative;
-				&:hover,
-				&.active{	
-					color: $el-red-color;				
-					/* &:before{
-						position: absolute;
-						left: 0;
-						content: '';
-						bottom: -15px;
-						height: 4px;
-						width: 100%;
-						background: $el-red-color;
-					} */
-				}
+				
 			}
 		}
 		.toggle-nav{
@@ -414,15 +407,44 @@ section{
 	padding: 40px 0;
 	text-align: center;
 	@extend .clearfix;
+	line-height: 1.3;
+	h2+p{
+		margin: 0 auto 30px;
+		max-width: 1000px;
+	}
 	.about-item{
 		@extend .col2;
 		li{
-			margin-bottom: 10px;
+			margin-bottom: 20px;
+			span{
+				color: $el-color;
+			}
+		}
+	}
+	.img-container{
+		@include bd_radius(50%);
+		overflow: hidden;
+		margin: 0 auto 20px;
+		width: 150px;
+		height: 150px;
+		.inner{
+			display: table-cell;
+			vertical-align: middle;
+			width: 150px;
+			height: 150px;
+			text-align: center;
+		}
+		img{
+			max-width: 100%;
+			max-height: 100%;
 		}
 	}
 }
 .skills{
 	position: relative;
+	.container{
+		margin-bottom: 20px;
+	}
 	&:before{
 		position: absolute;
 		content: "";
@@ -578,6 +600,29 @@ section{
 /* 
 ----------Responsive---------- */
 @media (max-width:1279px){}
+@media (min-width: 768px) and (max-width:1200px){	
+	 .skills ul li{
+		height: 71px;
+		display: block;
+		line-height: 41px;
+		vertical-align: middle;
+		span{
+			display: inline-block;
+			line-height: 1.2;
+			vertical-align: middle;
+		}
+	} 
+	/*.clearfix{
+		display: table;
+	}
+	.col2{
+		display: table-column;
+		li{
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}*/
+}
 @media (max-width:979px){}
 @media (max-width:767px){
 	h1{
@@ -607,9 +652,8 @@ section{
 				right: 0;
 				top: 51px;
 				padding: 0;
-				overflow: hidden;
-				height: 0;
-				/* display: none; */
+				overflow: hidden;				
+				display: none;
 				&:before{
 					display: none;
 				}
@@ -639,6 +683,18 @@ section{
 			padding: 70px 20px 40px;
 		}
 	}
+	.skills{		
+		.col2{
+			float: none;
+			width: 100%;
+			li{
+				padding-right: 0;
+				&:after{
+					right: 0;
+				}
+			}
+		}
+	}
 	.contacts .col3{
 		font-size: 16px;
 	}
@@ -655,6 +711,16 @@ section{
 		.btn{
 			margin-bottom: 60px;
 		}
+	}
+	.about{
+		.col2{
+			margin-bottom: 40px;
+			float: none;
+			width: 100%;
+		}
+	}
+	.skills{
+
 	}
 	.contacts {
 		.row{
