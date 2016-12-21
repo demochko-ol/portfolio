@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 	<title>Portfolio</title>
-	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
     <link rel="SHORTCUT ICON" href="favicon.ico">
 	<link href="files/css/styles.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 </head>
 
 <body>
 
 <div class="wrapper">
 	<header class="header" id="header">
-		<nav class="main-nav">
+		<div class="main-nav fixed-top">
 			<div class="container">
-				<div class="row">
+				<div class="clearfix">
 					<div class="logo"><a href="#"></a></div>
 					<div class="ovh">
 						<button class="toggle-nav">
@@ -25,7 +29,7 @@
 							<span></span>
 							<span></span>
 						</button>	
-						<div class="nav">
+						<nav class="nav">
 							<ul>
 								<li class="active"><a href="#header">Home</a></li>
 								<li><a href="#about">About me</a></li>
@@ -33,11 +37,11 @@
 								<li><a href="#portfolio">Portfolio</a></li>
 								<li><a href="#contacts">Contacts</a></li>
 							</ul>
-						</div>					
+						</nav>					
 					</div>					
 				</div>
 			</div>
-		</nav>
+		</div>
 		<div class="header-container">
 			<div class="header-content">
 				<h1>Olga Demochko <small>Responsive Front-end Development</small></h1>
@@ -48,7 +52,7 @@
 					<li>sass</li>
 					<li>jquery</li>
 				</ul>
-				<button class="btn">view portfolio</button>
+				<button class="btn view">view portfolio</button>
 			</div>
 		</div>
 		<div class="next"><a href="#"><i></i></a></div>
@@ -132,161 +136,95 @@
 		</section>
 		<section class="portfolio" id="portfolio">
 			<div class="container">
-				<!-- <ul>
-					<li><a href="#">All works</a></li>
-					<li><a href="#">Bootstrap</a></li>
-					<li><a href="#">App</a></li>
-					<li><a href="#">Sites</a></li>
-				</ul> -->
-				<h2>Works</h2>
+				<h2>Portfolio</h2>
 				<ul class="works">
 					<li>
 						<a href="works/matbets">
 							<img src="files/images/matbets.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>Matbets</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>
 							</div>							
 						</a>
 					</li>
 					<li>
 						<a href="works/dialbase-app">
 							<img src="files/images/dialbase-app.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>Dialbase</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>
 							</div>				
 						</a>
 					</li>
 					<li>
 						<a href="works/dialbase-landing">
 							<img src="files/images/dialbase-landing.jpg" alt="">
-							<div class="description-wrap">
-								<h3>Dialbase</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+							<div class="description">
+								<h3>Dialbase <span>(landing page)</span></h3>
+								<i></i>
 							</div>	
 						</a>
 					</li>
 					<li>
 						<a href="works/kvadrat">
 							<img src="files/images/kvadrat.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>Kvadrat</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>
 							</div>							
 						</a>
 					</li>
 					<li>
 						<a href="works/bonaldo">
 							<img src="files/images/bonaldo.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>Bonaldo</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>
 							</div>							
 						</a>
 					</li>
 					<li>
 						<a href="works/cafeboutique">
 							<img src="files/images/cafe-boutique.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>CafeBoutique</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>
 							</div>							
 						</a>
 					</li>
 					<li>
 						<a href="works/stash">
 							<img src="files/images/stash.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>Stash</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>
 							</div>							
 						</a>
 					</li>
 					<li>
 						<a href="works/reply-times">
 							<img src="files/images/reply-times.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>Reply Times</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>
 							</div>							
 						</a>
 					</li>
 					<li>
 						<a href="works/awesomex">
 							<img src="files/images/awesomex.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>Awesomex</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>		
 							</div>							
 						</a>
 					</li>
 					<li>
 						<a href="works/topics">
 							<img src="files/images/topics.jpg" alt="">
-							<div class="description-wrap">
+							<div class="description">
 								<h3>Topics</h3>
-								<div class="description">
-									<ul>
-										<li>ldskfj</li>
-										<li>oejf</li>
-										<li>[swepokf</li>
-									</ul>
-								</div>
+								<i></i>
 							</div>							
 						</a>
 					</li>
@@ -302,7 +240,7 @@
 				<div class="row contacts-container">
 					<div class="col3">
 						<i><img src="files/images/phone.svg" alt=""></i>
-						<p>+38(050) 96-014-97</p>
+						<p>+38 (050) 96-014-97</p>
 					</div>
 					<div class="col3">
 						<i><img src="files/images/skype.svg" alt=""></i>

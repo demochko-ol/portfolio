@@ -12,6 +12,8 @@ $(function(){
 	}
 	setsHeaderHeight();
 	
+	$(".main-nav").toggleClass('fixed-top', $(window).scrollTop()>=$('.header').outerHeight()-20);	
+
 	$(window).resize(function(){
 		setsHeaderHeight();
 
@@ -28,24 +30,20 @@ $(function(){
 		});
 
 	});
+	$('.view').click(function(){
+		var port = $("#portfolio").offset().top - topMenuHeight+1;
+		$('html, body').animate({
+		    scrollTop: port
+		  }, 1000);
+		  e.preventDefault();
+	});
 
-	/*$('.main-nav ul').on("click", 'a', function(event){
-        event.preventDefault();
-
-        var link = $(this),
-        	id = $(this).attr('href'),
-            top = $(id).offset().top -39;
-
-            link.addClass("active").parent().siblings().find('a').removeClass("active");
-            $('body,html').animate({scrollTop: top}, 1000);         
-    });*/
-
-
+	
 
 	// Cache selectors
 var lastId,
   topMenu = $(".main-nav ul"),
-  topMenuHeight = topMenu.outerHeight() + 15,
+  topMenuHeight = topMenu.outerHeight() + 20,
   // All list items
   menuItems = topMenu.find("a"),
   // Anchors corresponding to menu items
@@ -60,18 +58,23 @@ var lastId,
 // so we can get a fancy scroll animation
 menuItems.click(function(e) {
   var href = $(this).attr("href"),
-    offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-  $('html, body').stop().animate({
+    offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight+1;
+  $('html, body').animate({
     scrollTop: offsetTop
-  }, 1300);
+  }, 1000);
   e.preventDefault();
+
+  if($(window).width()<767){
+  	$('.nav').slideUp(500).removeClass('open');
+  }
+  
 });
 
 	
 // Bind to scroll
 $(window).scroll(function() {
 
-	$(".main-nav").toggleClass('fixed-top', $(window).scrollTop()>=$('.header').outerHeight()-15);	
+	$(".main-nav").toggleClass('fixed-top', $(window).scrollTop()>=$('.header').outerHeight()-19);	
 
 
 
@@ -89,10 +92,14 @@ $(window).scroll(function() {
 
   if (lastId !== id) {
     lastId = id;
+
     // Set/remove active class
     menuItems
       .parent().removeClass("active")
       .end().filter("[href='#" + id + "']").parent().addClass("active");
+
+      $(".active-section").removeClass("active-section");
+      $(cur).addClass("active-section");
   }
 });
 
